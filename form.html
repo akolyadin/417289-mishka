@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка-Вязание на заказ.</title>
+  </head>
+  <body>
+  	<header class="page-header">
+      <div class="page-header__top">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/100x50" width="100" height="50" alt="Мишка">
+      </a>
+
+      <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>  
+      <ul class="main-nav__list site-list">
+      	<li class="site-list__item">
+      		<a href="catalog.html">Каталог товаров</a>
+      	</li>
+      	<li class="site-list__item">
+      		<a href=#>Вязание на заказ</a>
+      	</li>
+      </ul>
+      <ul class="main-nav__list user-list">
+      	<li class="user-list__item">
+      		<a class="user-list__search" href=#>Поиск по сайту</a>
+      	</li>
+      	</li>
+      	<li class="user-list__item">
+      		<a class="user-list__basket" href=#>Корзина: пока пуста</a>
+      	</li>
+      </ul>
+    </nav>
+      </div>
+      <div class="page-header__intro">
+      	
+      </div>
+    </header>
+    <main>
+    	<div class="page-title">
+    		<h1 class="page-title__text">
+    			Вязание на заказ
+    		</h1>
+    	</div>
+    	<form class="order-form">
+    		<p class="order-form__title">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    		<div class="order__sections">
+    			<div class="order__section section__type">
+    				<b class="section__name">Тип</b>
+    				<label class="section__type--radio">
+    					<input type="radio" name="section__type" value="accessories" checked>
+    					<span class="section__type">Аксессуары для интерьера</span>
+    				</label>
+    				<label class="section__type--radio">
+    					<input type="radio" name="section__type" value="toy" >
+    					<span class="section__type">Детская игрушка</span>
+    				</label>
+    			</div>
+    			<div class="order__section section__color">
+    				<b class="section__name">Цвет</b>
+    				<label class="color__checkbox">
+    					<input type="checkbox" name="section__type" value="Белый" checked>
+    					<span class="section__type">Белый</span>
+    				</label>
+    				<label class="color__checkbox">
+    					<input type="checkbox" name="section__type" value="Серый" checked>
+    					<span class="section__type">Серый</span>
+    				</label>
+    				<label class="color__checkbox">
+    					<input type="checkbox" name="section__type" value="«Тиффани»">
+    					<span class="section__type">«Тиффани»</span>
+    				</label>
+    				<label class="color__checkbox">
+    					<input type="checkbox" name="section__type" value="Черный">
+    					<span class="section__type">Черный</span>
+    				</label>
+    				<label class="color__checkbox">
+    					<input type="checkbox" name="section__type" value="Розовый">
+    					<span class="section__type">Розовый</span>
+    				</label>
+    				<label class="color__checkbox">
+    					<input type="checkbox" name="section__type" value="Оранжевый">
+    					<span class="section__type">Оранжевый</span>
+    				</label>
+    			</div>
+    			<div class="order__section section__contact">
+    				<b class="section__name">ФИО</b>
+    				<label class="contact__text">
+    					<span class="contact__fiels">Имя:</span>
+    					<input class="field-text__input"  type="text" placeholder="Введите ваше имя*" required>
+    				</label>
+    				<label class="contact__text">
+    					<span class="contact__fiels">Фамилия:</span>
+    					<input class="field-text__input"  type="text" placeholder="Укажите фамилию*" required>
+    				</label>
+    				<label class="contact__text">
+    					<span class="contact__fiels">Отчество:</span>
+    					<input class="field-text__input"  type="text" placeholder="Отчество, если желаете " >
+    				</label>
+    			</div>
+    			<div class="order__section section__phone">
+    				<b class="section__name">Тел</b>
+    				<label class="contact__text">
+    					<input class="field-text__input section__phone-img"  type="tel" placeholder="+7 XXX XX XX">
+    				</label>
+    			</div>
+    			<div class="order__section section__email">
+    				<b class="section__name">E-mail</b>
+    				<label class="contact__text">
+    					<input class="field-text__input section__phone-img"  type="tel" placeholder="Ваш Email">
+    				</label>
+    			</div>
+    			<div class="order__section section__comment">
+    				<b class="section__name">Доп</b>
+    				<textarea class="field-memo__input" placeholder="Опишите все ваши пожелания к заказу"></textarea> 
+    			</div>
+    		</div>
+    		<div class="order-form__submit">
+    			<div class="order-form__required">Все поля обязательны для заполнения</div>
+    			<a class="button "order-form__submit" href="#">Отправить заказ</a>
+    			
+    		</div>
+    		
+    	</form>
+    </main>
+    
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href=#>Instagram</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href=#>Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tweeter" href=#>Twitter</a>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="page-footer__copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+
+        </div>
+      </div>
+    </footer>
