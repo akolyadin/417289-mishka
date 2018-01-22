@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Мишка-Каталог товаров.</title>
@@ -29,65 +28,100 @@
 					</ul>
 				</nav>
 			</div>
-			<h1 class="page-header__title">Каталог товаров</h1>
+			<div class="page-header__intro">
+				<h1 class="page-header__title">Каталог товаров</h1>
+			</div>
 		</header>
 		<main class="catalog">
 			<div class="page-title">
 				<section class="catalog-list">
 					<article class="catalog-item">
-						<img class="catatalog-item__img img-rabbit" src="http://placehold.it/100x50" width="100" height="50" alt="Зайчик-попрыгайчик">
-						<div class="catatalog-item__description">
-							<b class="item-name">Зайчик-попрыгайчик</b>
-							<div class="item-parameters">Рост 30 см, вес 200 г</div>
-							<div class="item-price">1200 руб.</div>
-						</div>
+						<a class="catalog-item__image" href="#">
+							<img class="image-rabbit" src="http://placehold.it/100x50" width="100" height="50" alt="Зайчик-попрыгайчик">
+						</a>
+						<article class="catatalog-item__description">
+							<header class="catatalog-item__header">
+								<a href="#">
+									<b class="catalog-item__title">Зайчик-попрыгайчик</b>
+								</a>
+								<div class="catalog-item__parameters">Рост 30 см, вес 200 г</div>
+							</header>
+							<footer class="catalog-item__footer">
+								<b class="catalog-item__price">1200 руб.</b>
+								<a class="catatalog-item__buy" href="#"></a>
+							</footer>
+						</article>
 					</article>
-					<div class="catatalog-item">
-						<img class="catatalog-item__img img-laundry-basket" src="http://placehold.it/100x50" width="100" height="50" alt="Корзинка для белья">
-						<div class="catatalog-item__description">
-							<b class="item-name">Корзинка для белья</b>
-							<div class="item-parameters">Диаметр 15 см, высота 10 см</div>
-							<div class="item-price">690 руб.</div>
-						</div>
-					</div>
-					<div class="catatalog-item">
-						<img class="catatalog-item__img img-big-toy-basket" src="http://placehold.it/100x50" width="100" height="50" alt="Большая корзинка для игрушек">
-						<div class="catatalog-item__description">
-							<b class="item-name">Большая корзинка для игрушек</b>
-							<div class="item-parameters">Диаметр 30 см, высота 30 см</div>
-							<div class="item-price">1500 руб.</div>
-						</div>
-					</div>
+					<article class="catalog-item">
+						<a class="catalog-item__image" href="#">
+							<img class="image-laundry-basket" src="http://placehold.it/100x50" width="100" height="50" alt="Корзинка для белья">
+						</a>
+						<article class="catatalog-item__description">
+							<header class="catatalog-item__header">
+								<a href="#">
+									<b class="catalog-item__title">Корзинка для белья</b>
+								</a>
+								<div class="catalog-item__parameters">Диаметр 15 см, высота 10 см</div>
+							</header>
+							<footer class="catalog-item__footer">
+								<b class="catalog-item__price">690 руб.</b>
+								<a class="catatalog-item__buy" href="#"></a>
+							</footer>
+						</article>
+					</article>
+					<article class="catalog-item">
+						<a class="catalog-item__image" href="#">
+							<img class="image-big-toy-basket" src="http://placehold.it/100x50" width="100" height="50" alt="Большая корзинка для игрушек">
+						</a>
+						<article class="catatalog-item__description">
+							<header class="catatalog-item__header">
+								<a href="#">
+									<b class="catalog-item__title">Большая корзинка для игрушек</b>
+								</a>
+								<div class="catalog-item__parameters">Диаметр 30 см, высота 30 см</div>
+							</header>
+							<footer class="catalog-item__footer">
+								<b class="catalog-item__price">1500 руб.</b>
+								<a class="catatalog-item__buy" href="#"></a>
+							</footer>
+						</article>
+					</article>
 				</section>
 				<section class="prod-process">
 					<h2 class="prod-process__title">Процесс производства</h2>
 					<div class="prod-process__video">
-					<video class="video" src="#" poster="http://placehold.it/100x50" width="100" height="50"></video>
-				</div>
-				<p class="prod-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-				<a class="button prod-process__btn" href="#">Сделать заказ</a>
-			</section>
-		</div>
-	</main>
-	<footer class="page-footer">
-		<div class="page-footer__wrapper">
+						<div class="prod-process__preview">
+							<img src="http://placehold.it/100x50" width="100" height="50" alt="Процесс производства">
+							<button class="prod-process__play-btn"></button>
+						</div>
+					</div>
+					<div class="prod-process__footer">
+						<p class="prod-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+						<a class="prod-process__btn btn" href="#">Сделать заказ</a>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="page-footer">
 			<div class="page-footer__social">
-				<ul class="social__list">
-					<li class="social__item">
-						<a class="social__link social__link--instagram" href=#>Instagram</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link social__link--facebook" href=#>Facebook</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link social__link--tweeter" href=#>Twitter</a>
-					</li>
-				</ul>
+				<div class="social">
+					<ul class="social__list">
+						<li class="social__item">
+							<a class="social__link social__link--instagram" href=#>Instagram</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link social__link--facebook" href=#>Facebook</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link social__link--tweeter" href=#>Twitter</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div class="page-footer__copyright">
-				<b class="copyright__text">Разработано</b>
-				<a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+				<div class="copyright">
+					<b class="copyright__text">Разработано</b>
+					<a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+				</div>
 			</div>
-		</div>
-	</footer>
-
+		</footer>
