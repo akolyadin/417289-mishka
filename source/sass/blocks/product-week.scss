@@ -1,3 +1,10 @@
 .product-week {
-  color: $color-gray-dark;
+  outline: 1px solid $color-black;
+  padding: 0 $padding;
 }
+
+.product-week__mark {
+  color: $color-blue-lighter;
+  text-transform: uppercase;
+}
+

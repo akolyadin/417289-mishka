@@ -1,0 +1,8 @@
+.contacts {
+  outline: 1px solid $color-black;
+  padding: 0 $padding;
+}
+
+.contacts:last-child div {
+  padding: 0;
+}

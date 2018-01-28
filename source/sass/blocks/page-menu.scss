@@ -1,0 +1,25 @@
+.page-menu__list {
+  padding: 0px;
+}
+
+
+.page-menu__item {
+  list-style-type: none;
+  padding: 27px 30px;
+  background-color: $color-blue-lighter
+}
+
+
+ .page-menu__item:nth-child(2n) {
+  background-color: $color-blue-darker;
+}
+
+.page-menu__link {
+  text-decoration: none;
+  color: $color-white;
+  text-align: center;
+  font-weight: $weight;
+}
+
+
+

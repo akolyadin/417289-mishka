@@ -1,0 +1,13 @@
+.features {
+  outline: 1px solid $color-black;
+  padding: 0 $padding;
+}
+
+.features__list {
+  padding: 0;
+}
+
+.feature-item {
+  list-style-type: none;
+  font-weight: $weight;
+}

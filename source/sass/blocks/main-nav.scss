@@ -1,0 +1,21 @@
+.main-nav {
+  outline: 1px solid $color-black;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.main-nav__list {
+  padding: 0;
+}
+
+.main-nav__item {
+  padding: 28px 0px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $color-black;
+}
