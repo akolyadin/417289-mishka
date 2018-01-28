@@ -1,8 +1,6 @@
 .main-nav {
   outline: 1px solid $color-black;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
+    @include font-set($weight, 17px, 24px);
 }
 
 .main-nav__list {

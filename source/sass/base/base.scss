@@ -1,7 +1,5 @@
-@import "variables";
-
-html, body{
-height: 100%;
+html, body {
+  height: 100%;
 }
 
 body {
@@ -11,12 +9,17 @@ body {
   display: flex;
   flex-direction: column;
   word-wrap: break-word;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-  font-size: $size;
-  line-height: $line-height;
-
+  font-family: $font-main;
+  @include font($size, $line-height);
 }
 
-
 .visually-hidden {
-  }
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
