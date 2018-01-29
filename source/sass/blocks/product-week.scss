@@ -1,0 +1,9 @@
+.product-week {
+  outline: 1px solid $color-black;
+  padding: 0 $indents;
+}
+
+.product-week__mark {
+  color: $color-blue-lighter;
+  text-transform: uppercase;
+}

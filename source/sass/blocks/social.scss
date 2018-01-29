@@ -1,0 +1,10 @@
+.social {
+  outline: 1px solid $color-black;
+  padding: 0 $indents;
+  background-color: $color-gray-light;
+}
+
+.social__list {
+  list-style-type: none;
+  padding: 0;
+}

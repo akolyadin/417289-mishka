@@ -1,0 +1,20 @@
+.main-nav {
+  outline: 1px solid $color-black;
+
+  @include font-set($weight, 17px, 24px);
+}
+
+.main-nav__list {
+  padding: 0;
+}
+
+.main-nav__item {
+  padding: 28px 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $color-black;
+}
