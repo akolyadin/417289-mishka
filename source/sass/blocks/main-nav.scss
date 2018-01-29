@@ -1,6 +1,7 @@
 .main-nav {
   outline: 1px solid $color-black;
-    @include font-set($weight, 17px, 24px);
+
+  @include font-set($weight, 17px, 24px);
 }
 
 .main-nav__list {
@@ -8,7 +9,7 @@
 }
 
 .main-nav__item {
-  padding: 28px 0px;
+  padding: 28px 0;
   text-align: center;
   list-style-type: none;
 }
