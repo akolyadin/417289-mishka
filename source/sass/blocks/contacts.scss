@@ -1,8 +1,7 @@
 .contacts {
   outline: 1px solid $color-black;
-  padding: 0 $indents;
 }
 
-.contacts:last-child div {
-  padding: 0;
+.contacts__title, .contacts__inner {
+  padding: 0 $indents;
 }
