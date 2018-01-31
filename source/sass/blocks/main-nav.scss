@@ -24,6 +24,10 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
+  padding: 0 $indents-tablet;
+}
+
+  .main-nav__list {
     background-color: $color-blue-lighter;
     outline: 5px solid $color-black;
     min-height: 88px;

@@ -7,3 +7,56 @@
   color: $color-blue-lighter;
   text-transform: uppercase;
 }
+
+
+@media (min-width: $tablet-width) {
+  .product-week {
+  padding: 0 $indents-tablet;
+
+}
+
+.product-week__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.product-week__header {
+   display: flex;
+   flex-direction: row;
+   width: 668px;
+
+}
+
+.product-week__description {
+  width: 291px;
+   padding-right: 43px;
+}
+
+  .product-week__title {
+    font-size: $size-h2-table;
+    width: 100%;
+  }
+
+.product-week__mark {
+  padding: 35px 28px 0 0;
+  line-height: 15px;
+  text-align: center;
+}
+
+.product-week__image {
+  width: 334px;
+}
+
+.product-week__footer {
+  width: 291px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 43px;
+
+}
+
+}
+

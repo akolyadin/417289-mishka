@@ -1,11 +1,17 @@
+.page-menu {
+  background-color: $color-gray-light;
+}
+
 .page-menu__list {
   padding: 0;
+
 }
 
 .page-menu__item {
   list-style-type: none;
   padding: 27px 30px;
   background-color: $color-blue-lighter;
+
 }
 
 .page-menu__item:nth-child(2n) {
@@ -17,4 +23,17 @@
   color: $color-white;
   text-align: center;
   font-weight: $weight;
+}
+
+@media (min-width: $tablet-width) {
+  .page-menu__list {
+    display: flex;
+    flex-direction: row;
+    padding: 0 $indents-tablet;
+}
+
+
+  .page-menu__item {
+    width: 100%;
+}
 }
