@@ -1,3 +1,8 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-header__title {
   padding: 50px $indents;
   text-align: center;
