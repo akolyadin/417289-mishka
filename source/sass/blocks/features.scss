@@ -3,6 +3,13 @@
   padding: 0 $indents;
 }
 
+.features_title {
+  margin: 0;
+  padding: 36px 0 31px;
+
+  @include font(25px, 30px);
+}
+
 .features__list {
   padding: 0;
 }
@@ -10,6 +17,7 @@
 .feature-item {
   list-style-type: none;
   font-weight: $weight;
+  padding-bottom: 36px;
 }
 
 

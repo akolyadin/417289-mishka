@@ -1,19 +1,25 @@
 .main-nav {
   @include font-set($weight, 17px, 24px);
+  width: 100%;
 }
 
+.main-nav__toggle {
+align-self: flex-end;
+position: absolute;
+top: 27px;
+}
+
+
 .main-nav__list {
-  outline: 1px solid $color-black;
   padding: 0;
-  min-height: 395px;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
 }
 
 .main-nav__item {
   padding: 28px 0;
   text-align: center;
   list-style-type: none;
+  outline: 1px solid red;
 }
 
 .main-nav__link {
@@ -28,8 +34,6 @@
 }
 
   .main-nav__list {
-    background-color: $color-blue-lighter;
-    outline: 5px solid $color-black;
     min-height: 88px;
     max-width: 100%;
     display: flex;
@@ -41,7 +45,6 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
-    background-color: $color-gray-light;
     outline: 10px solid $color-black;
     height: 50px;
     max-width: 100%;
