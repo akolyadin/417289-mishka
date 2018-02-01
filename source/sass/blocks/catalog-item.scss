@@ -6,3 +6,18 @@
 .catatalog-item__description {
   padding-left: 28px;
 }
+
+
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .catatalog-item__description {
+    padding-left: 27px;
+    width: 50%;
+  }
+}

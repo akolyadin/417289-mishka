@@ -1,4 +1,33 @@
 .prod-process {
-  outline: 1px solid $color-black;
-  padding: 0 $indents;
+  padding: 31px $indents 0;
+  display: flex;
+  flex-direction: column;
 }
+
+.prod-process__video {
+}
+
+.prod-process__btn {
+    outline: 1px solid $color-black;
+    display: block;
+    text-align: center;
+  }
+
+@media (min-width: $tablet-width) {
+  .prod-process {
+    padding-top: 51px;
+  }
+
+  .prod-process__title {
+    padding: 39px 42px 0;
+  }
+  .prod-process__video {
+    order: -1;
+    width: 100%;
+  }
+
+  .prod-process__footer {
+    padding: 0 42px;
+  }
+}
+

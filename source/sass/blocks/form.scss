@@ -1,4 +1,49 @@
-.form {
-  outline: 1px solid $color-black;
-  padding: 0 $indents;
+.order-form__group {
+  margin: 0;
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .promo-text {
+    padding: 0 $indents-tablet;
+  }
+
+  .order-form__wrapper {
+    display: flex;
+   }
+  .order-form__group {
+  padding: 0;
+}
+
+  .order-form__title {
+    padding-left: 0;
+    width: 167px;
+  }
+
+  .order-form__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-text {
+    padding: 0 $indents-desktop;
+  }
+
+  .order-form__wrapper {
+    display: flex;
+   }
+
+  .order-form__title {
+    padding-left: 0;
+    width: 113px;
+  }
+
+  .order-form__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }

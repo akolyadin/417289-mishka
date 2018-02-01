@@ -1,3 +1,6 @@
-.page-main {
-  outline: 1px solid $color-black;
+
+@media (min-width: $tablet-width) {
+  .page-main {
+  padding: 0 $indents-tablet;
+  }
 }

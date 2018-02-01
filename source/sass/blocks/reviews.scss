@@ -1,4 +1,4 @@
-.reviews {
+.reviews__wrapper {
   outline: 1px solid $color-black;
   padding: 0 $indents;
 }
@@ -9,7 +9,7 @@
 
 
 @media (min-width: $tablet-width) {
-  .reviews {
+  .reviews__wrapper {
   padding: 0 $indents-tablet;
   position: relative;
   background-image: url("../img/review@1x.jpg");
@@ -21,15 +21,13 @@
     font-size: $size-h2-table;
   }
 
-  .review__item {
-    display: flex;
-  }
 
   .product-week__btn {
     width: 175px;
     text-align: center;
-    position: absolute;
-    top: 20px;
-    right: 0;
-  }
+ }
+
+ .reviews__btn {
+  order: -1;
+ }
 }
