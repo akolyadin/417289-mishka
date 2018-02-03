@@ -24,34 +24,27 @@
   .order-form__item {
     padding: 0 $indents-tablet;
   }
-
   .order-form__item:nth-child(2) {
     background-color: $color-gray-light;
   }
-
   .order-form__item:nth-child(4) {
     background-color: $color-gray-light;
   }
-
   .order-form__item:nth-child(5) {
     background-color: $color-gray-light;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .order-form__item {
     padding: 0 $indents-desktop;
   }
-
   .order-form__item:nth-child(2) {
     background-color: $color-gray-light;
   }
-
   .order-form__item:nth-child(4) {
     background-color: $color-gray-light;
   }
-
   .order-form__item:nth-child(5) {
     background-color: $color-gray-light;
   }

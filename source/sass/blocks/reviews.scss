@@ -1,5 +1,4 @@
 .reviews__wrapper {
-  outline: 1px solid $color-black;
   padding: 0 $indents;
   display: flex;
   flex-direction: column;
@@ -18,24 +17,34 @@
 
 @media (min-width: $tablet-width) {
   .reviews__wrapper {
-  padding: 0 $indents-tablet;
-  position: relative;
-  background-image: url("../img/review@1x.jpg");
-  background-repeat: no-repeat;
-  min-height: 542px;
+    padding: 50px $indents-tablet;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    min-height: 400px;
   }
 
   .reviews__title {
     font-size: $size-h2-table;
   }
 
-
   .product-week__btn {
     width: 175px;
     text-align: center;
- }
+   }
+
+  .review__author {
+    display: flex;
+    flex-direction: column;
+  }
 
  .reviews__btn {
-  order: -1;
+    order: -1;
+    align-self: flex-end;
  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    padding-left: 225px;
+  }
 }

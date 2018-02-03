@@ -28,13 +28,14 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .page-menu__list {
     display: flex;
     flex-direction: row;
     padding: 0 $indents-tablet;
-}
+  }
 
   .page-menu__item {
     width: 100%;
-}
+  }
 }

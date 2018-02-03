@@ -1,17 +1,13 @@
 .contacts {
-  outline: 1px solid $color-black;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
-
 .contacts__title,
 .contacts__inner {
   padding: 0 $indents;
 }
-
 
 .contacts__title {
   padding-top: 43px;
@@ -29,7 +25,42 @@
   width: 80px;
 }
 
-
 .contacts__link {
   width: 180px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  .contacts__title,
+  .contacts__inner {
+    padding: 0 $indents-tablet;
+  }
+
+ .contacts__title {
+    font-size: $size-h2-table;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__title {
+  padding-left: 225px;
+  }
+
+  .contacts__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    vjustify-content: flex-start;
+    width: 350px;
+  }
 }

@@ -6,8 +6,6 @@
   outline: 1px solid $color-black;
 }
 
-
-
 .page-footer__copyright {
   min-height: 82px;
   display: flex;
@@ -18,8 +16,8 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
