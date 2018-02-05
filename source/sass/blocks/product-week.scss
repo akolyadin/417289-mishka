@@ -53,7 +53,8 @@
   color: $color-gray-dark;
   display: block;
 
-  @include font(17px, 24px)
+  @include font(17px, 24px);
+
 }
 
 
@@ -117,7 +118,7 @@
   .product-week__mark {
     line-height: 15px;
 
-    @include font(17px, 17px)
+    @include font(17px, 17px);
 
     text-align: center;
     width: 175px;
