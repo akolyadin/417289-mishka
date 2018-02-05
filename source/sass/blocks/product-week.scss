@@ -8,12 +8,14 @@
 
 .product-week__table {
   width: 100%;
+  border-collapse: collapse;
 }
 
 .product-week__title {
-    padding-top: 33px;
-    margin: 0;
-    @include font(24px, 30px);
+  padding-top: 33px;
+  margin: 0;
+
+  @include font(24px, 30px);
 }
 
 .product-week__mark {
@@ -38,10 +40,6 @@
   width: 160px;
 }
 
-.product-week__table {
-border-collapse: collapse;
-}
-
 .product-week__row {
   border-bottom: 1pt solid $color-gray-light;
 }
@@ -61,12 +59,9 @@ border-collapse: collapse;
 
 @media (min-width: $tablet-width) {
   .product-week__wrapper {
-    padding: 0 $indents-tablet;
-  }
-
-  .product-week__wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 $indents-tablet;
   }
 
   .product-week__header {

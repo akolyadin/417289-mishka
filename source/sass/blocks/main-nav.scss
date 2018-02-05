@@ -4,9 +4,9 @@
 }
 
 .main-nav__toggle {
-position: absolute;
-top: 27px;
-right: $indents;
+  position: absolute;
+  top: 27px;
+  right: $indents;
 }
 
 .main-nav__list {
@@ -59,9 +59,9 @@ right: $indents;
   }
 
   .main-nav__item--catalog,
-  .main-nav__item--for
+  .main-nav__item--form,
   .main-nav__item--new,
-  .main-nav__item--sale  {
+  .main-nav__item--sale {
     text-align: left;
   }
 
@@ -76,7 +76,6 @@ right: $indents;
 }
 
 @media (min-width: $desktop-width) {
-
   .main-nav__list {
     padding: 0 $indents-desktop;
   }
@@ -111,6 +110,7 @@ right: $indents;
 
   .main-nav__item--new {
     order: 5;
+    width: 184px;
   }
 
   .main-nav__item--sale {
@@ -120,8 +120,5 @@ right: $indents;
   .main-nav__item--new,
   .main-nav__item--sale {
     display: block;
-  }
-  .main-nav__item--new {
-    width: 184px;
   }
 }

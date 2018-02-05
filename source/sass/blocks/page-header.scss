@@ -2,6 +2,7 @@
   padding: 74px $indents 0;
   text-align: center;
   margin: 0;
+
   @include font(27px, 30px);
 }
 
@@ -25,15 +26,13 @@
     display: block;
     margin: 0;
     padding-top: 24px;
-}
+    text-align: right;
+  }
+
   .page-header__intro {
     padding: 0 $indents-tablet;
     min-height: 500px;
     margin-top: -73px;
-}
-
-  .page-header__offer {
-    text-align: right;
   }
 
   .page-header__intro--image {
@@ -54,11 +53,12 @@
     padding: 0;
     background-position: bottom;
   }
+
   .page-header__title {
     padding: 171px  180px 0;
   }
 
-    .page-header__offer {
+  .page-header__offer {
     padding-right: $indents-desktop;
   }
 }

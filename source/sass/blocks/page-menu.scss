@@ -12,7 +12,7 @@
   padding: 31px 30px 36px;
   background-color: $color-blue-lighter;
 
-  @include font(19px, 24px)
+  @include font(19px, 24px);
 }
 
 .page-menu__item:nth-child(2n) {
@@ -28,7 +28,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .page-menu__list {
     display: flex;
     padding: 0 $indents-tablet;

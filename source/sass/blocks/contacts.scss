@@ -29,9 +29,10 @@
 .contacts__label {
   width: 80px;
 }
+
 .contacts__btn {
-padding: 39px $indents;
-text-align: center;
+  padding: 39px $indents;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,7 +46,7 @@ text-align: center;
     padding: 0 $indents-tablet;
   }
 
-  .contacts__item  {
+  .contacts__item {
     width: 50%;
   }
 
