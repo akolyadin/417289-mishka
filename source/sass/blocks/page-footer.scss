@@ -1,23 +1,29 @@
-.page-footer {
+.page-footer__wrapper {
+  padding: 0 $indents;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: $color-gray-light;
-  outline: 1px solid $color-black;
 }
 
 .page-footer__copyright {
-  min-height: 82px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    }
+
+  .page-footer__logo,
+  .page-footer__social,
+  .page-footer__copyright {
+    width: 33%;
   }
+
+  .copyright {
+  margin-left: auto;
+}
 }

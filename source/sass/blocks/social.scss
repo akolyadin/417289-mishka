@@ -1,14 +1,11 @@
 .social {
   outline: 1px solid red;
-  padding: 0 $indents;
 }
 
 .social__list {
   margin: 0;
-  list-style-type: none;
   padding: 0;
+  list-style-type: none;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
 }
