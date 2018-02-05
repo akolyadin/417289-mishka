@@ -54,9 +54,7 @@
   display: block;
 
   @include font(17px, 24px);
-
 }
-
 
 @media (min-width: $tablet-width) {
   .product-week__wrapper {
