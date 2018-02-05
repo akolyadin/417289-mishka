@@ -3,15 +3,28 @@
   text-decoration: none;
 }
 
-.catatalog-item__description {
-  padding-left: 28px;
+.catalog-list__wrapper{
+  text-align: center;
 }
 
+.catatalog-item {
+  padding: 0;
+  text-align: left;
+  border-right: 1px solid $color-gray-light;
+}
+
+.catatalog-item__description {
+  text-align: left;
+  padding: 30px;
+}
+
+.catatalog-item__header {
+  border-bottom: 1pt solid $color-gray-light;
+}
 
 @media (min-width: $tablet-width) {
   .catalog-item {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
   }
 

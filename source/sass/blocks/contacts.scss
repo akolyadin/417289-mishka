@@ -7,7 +7,6 @@
 .contacts__inner {
   padding: 0 $indents;
   margin: 0;
-
 }
 
 .contacts__title {
@@ -15,7 +14,6 @@
 
   @include font(25px, 30px);
 }
-
 
 .contacts__item {
   display: flex;
@@ -36,8 +34,6 @@ padding: 39px $indents;
 text-align: center;
 }
 
-
-
 @media (min-width: $tablet-width) {
   .contacts__inner {
     display: flex;
@@ -46,9 +42,7 @@ text-align: center;
 
   .contacts__title,
   .contacts__inner {
-
     padding: 0 $indents-tablet;
-
   }
 
   .contacts__item  {
@@ -60,18 +54,15 @@ text-align: center;
   }
 
   .contacts__btn {
-width: 230px;
-margin: 0 auto;
-padding: 55px 0 57px;
-}
-
+    width: 230px;
+    margin: 0 auto;
+    padding: 55px 0 57px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__title,
   .contacts__inner {
-
     padding: 0 $indents-desktop 0 275px;
-
   }
 }

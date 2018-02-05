@@ -9,7 +9,6 @@ top: 27px;
 right: $indents;
 }
 
-
 .main-nav__list {
   padding: 0 $indents;
   margin: 0;
@@ -64,7 +63,6 @@ right: $indents;
   .main-nav__item--new,
   .main-nav__item--sale  {
     text-align: left;
-
   }
 
   .main-nav__item--catalog {
@@ -79,7 +77,6 @@ right: $indents;
 
 @media (min-width: $desktop-width) {
 
-
   .main-nav__list {
     padding: 0 $indents-desktop;
   }
@@ -89,13 +86,11 @@ right: $indents;
     width: 0;
     padding: 0;
     margin: 0 auto;
-   }
+  }
 
   .main-nav__item--search {
     order: 3;
     width: 83px;
-
-
   }
 
   .main-nav__item--basket {
@@ -119,15 +114,14 @@ right: $indents;
   }
 
   .main-nav__item--sale {
-   order: 6;
+    order: 6;
   }
 
   .main-nav__item--new,
   .main-nav__item--sale {
-  display: block;
-}
-.main-nav__item--new {
-width: 184px;
-}
-
+    display: block;
+  }
+  .main-nav__item--new {
+    width: 184px;
+  }
 }

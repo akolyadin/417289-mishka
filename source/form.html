@@ -8,28 +8,38 @@
   <body>
     <header class="page-header">
       <div class="page-header__top">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="http://placehold.it/100x50" width="100" height="50" alt="Мишка">
-        </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--home">
+              <a class="main-nav__link" href="index.html">
+                <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="89" height="36" alt="Мишка">
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--catalog">
               <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--form">
               <a class="main-nav__link" href="#">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--search">
               <a class="main-nav__link" href=#>Поиск по сайту</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--basket">
               <a class="main-nav__link" href=#>Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--new">
+              <a class="main-nav__link" href=#>Новые поступления</a>
+            </li>
+            <li class="main-nav__item main-nav__item--sale">
+              <a class="main-nav__link" href=#>Распродажа</a>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="page-header__intro">
+      <div class="page-header__intro page-header__intro--image">
+        <p class="page-header__offer">Бесплатная доставка по России</p>
         <h1 class="page-header__title">Вязание на заказ</h1>
       </div>
     </header>
@@ -87,17 +97,17 @@
             <legend class="order-form__title">ФИО</legend>
             <ul class="order-form__group">
               <li class="order-form__row">
-              <label class="order-form__label" for="contact-name">Имя:</label>
-              <input class="order-form__input" type="text" id="contact-name" placeholder="Введите ваше имя*" required>
-            </li>
+                <label class="order-form__label" for="contact-name">Имя:</label>
+                <input class="order-form__input" type="text" id="contact-name" placeholder="Введите ваше имя*" required>
+              </li>
               <li class="order-form__row">
-              <label class="order-form__label" for="contact-surname">Фамилия:</label>
-              <input class="order-form__input" type="text" id="contact-surname" placeholder="Укажите фамилию*" required>
-            </li>
+                <label class="order-form__label" for="contact-surname">Фамилия:</label>
+                <input class="order-form__input" type="text" id="contact-surname" placeholder="Укажите фамилию*" required>
+              </li>
               <li class="order-form__row">
-              <label class="order-form__label" for="contact-patronymic">Отчество:</label>
-              <input class="order-form__input" type="text" id="contact-patronymic" placeholder="Отчество, если желаете">
-            </li>
+                <label class="order-form__label" for="contact-patronymic">Отчество:</label>
+                <input class="order-form__input" type="text" id="contact-patronymic" placeholder="Отчество, если желаете">
+              </li>
             </ul>
           </div>
         </fieldset>

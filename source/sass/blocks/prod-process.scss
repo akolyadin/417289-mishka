@@ -1,14 +1,15 @@
-.prod-process {
-  padding: 31px $indents 0;
-  display: flex;
-  flex-direction: column;
+.prod-process__wrapper {
+  margin: 31px $indents 0;
+  border: 1px solid $color-gray-light;
 }
 
 .prod-process__btn {
-    outline: 1px solid $color-black;
-    display: block;
-    text-align: center;
-  }
+  text-align: center;
+}
+
+.prod-process__footer {
+  padding: 0 34px;
+}
 
 @media (min-width: $tablet-width) {
   .prod-process {

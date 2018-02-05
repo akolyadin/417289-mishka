@@ -67,7 +67,6 @@ border-collapse: collapse;
   .product-week__wrapper {
     display: flex;
     flex-wrap: wrap;
-
   }
 
   .product-week__header {
@@ -93,8 +92,6 @@ border-collapse: collapse;
     width: 50%;
   }
 
-
-
   .product-week__footer {
     width: 50%;
   }
@@ -103,7 +100,6 @@ border-collapse: collapse;
   .product-week__btn {
     padding-right: 43px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -137,7 +133,7 @@ border-collapse: collapse;
   .product-week__description {
     padding-left: 175px;
     width: 350px;
-    }
+  }
 
   .product-week__text {
     padding: 0;
