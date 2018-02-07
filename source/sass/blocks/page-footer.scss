@@ -1,5 +1,10 @@
-.page-footer__wrapper {
+.page-footer {
   padding: 0 $indents;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.page-footer__wrapper {
   text-align: center;
   background-color: $color-gray-light;
 }
@@ -28,4 +33,12 @@
   .copyright {
     margin-left: auto;
   }
+}
+
+@media (min-width: $desktop-width) {
+.page-footer {
+  max-width: 1150px;
+  padding: 0 50px;
+
+}
 }
