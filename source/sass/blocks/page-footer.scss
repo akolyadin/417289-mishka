@@ -1,6 +1,6 @@
 .page-footer__wrapper {
   margin: 0 auto;
-  outline: 1px solid ;
+  outline: 1px solid red;
   text-align: center;
   background-color: $color-gray-light;
 }
@@ -25,10 +25,10 @@
   }
 
   .page-footer__logo {
-  display: block;
-  margin: auto 0;
-  text-align: left;
-  padding-left: $indents-tablet;
+    display: block;
+    margin: auto 0;
+    text-align: left;
+    padding-left: $indents-tablet;
 }
 
   .page-footer__logo,
@@ -45,7 +45,7 @@
 
 @media (min-width: $desktop-width) {
   /*Не понимаю почему тут задаю ширину через перемнную, а блок обрезанный*/
-  .page-footer__wrapper{
+  .page-footer__wrapper {
     max-width: $desktop-width;
     min-height: 144px;
   }

@@ -46,18 +46,14 @@
     margin-top: -73px;
 
     &--image {
-    min-height: 500px;
+      min-height: 500px;
+      background-position: bottom;
     }
-  }
-
-  .page-header__intro--image {
-    background-position: bottom;
   }
 
   .page-header__title {
     padding: 103px 88px 83px;
   }
-
 }
 
 @media (min-width: $desktop-width) {

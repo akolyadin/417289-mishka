@@ -7,7 +7,6 @@
   min-height: 336px;
   margin: 0 auto;
   width: 320px;
-  outline: 1px solid red;
   padding: 36px 30px 46px;
   box-sizing: border-box;
 }
@@ -17,7 +16,7 @@
   padding: 0 50px 26px;
   text-align: center;
 
-  @include font(25px, 30px)
+  @include font(25px, 30px);
 }
 
 .modal__field-wrapper {
@@ -30,6 +29,7 @@
 .add-to-cart__text {
   margin: 0;
   padding-bottom: 28px;
+
   @include font(15px, 30px)
 }
 
@@ -40,8 +40,8 @@
 
 @media (min-width: $tablet-width) {
   .modal {
-  width: 566px;
-  padding: 50px 108px 46px;
+    width: 566px;
+    padding: 50px 108px 46px;
   }
 
   .modal__title {

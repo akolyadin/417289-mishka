@@ -7,7 +7,6 @@
 .contacts__inner {
   padding: 0 $indents;
   margin: 0;
-
 }
 
 .contacts__title {
@@ -40,10 +39,10 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-  display: flex;
-  flex-direction: column;
-  padding-top: 69px;
-}
+    display: flex;
+    flex-direction: column;
+    padding-top: 69px;
+  }
 
   .contacts__inner {
     display: flex;
@@ -82,11 +81,10 @@
     padding: 0 0 0 275px;
   }
 
-  .contacts__title{
+  .contacts__title {
     padding-bottom: 66px;
 
   .contacts__item {
     padding-bottom: 50px;
   }
-}
 }
