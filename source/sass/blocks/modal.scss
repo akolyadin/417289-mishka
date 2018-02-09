@@ -30,7 +30,8 @@
   margin: 0;
   padding-bottom: 28px;
 
-  @include font(15px, 30px)
+  @include font(15px, 30px);
+
 }
 
 .modal__btn {
