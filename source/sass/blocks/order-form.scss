@@ -1,4 +1,15 @@
+
+.order-form__text {
+  margin: 0;
+  padding: 29px $indents 33px;
+}
+
+.order-form__wrapper {
+  padding: 0 $indents 34px;
+}
+
 .order-form__item {
+  padding: 0;
   border: none;
 }
 
@@ -6,6 +17,17 @@
   font-weight: $weight;
   text-transform: uppercase;
   color: $color-blue-lighter;
+}
+
+.order-form__group {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-form__row {
+  display: flex;
+  flex-direction: column;
 }
 
 .order-form__label-radio {
@@ -21,6 +43,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .order-form__wrapper {
+
+
+  }
   .order-form__item {
     padding: 0 $indents-tablet;
   }

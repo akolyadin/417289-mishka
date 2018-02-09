@@ -4,7 +4,6 @@
   outline: 1px solid blue;
 }
 
-
 @media (min-width: $tablet-width) {
   .page-main {
     padding: 0;
@@ -12,10 +11,8 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .page-main {
     max-width: 1250px;
   }
 }
-

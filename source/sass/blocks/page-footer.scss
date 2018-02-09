@@ -1,11 +1,9 @@
 .page-footer__wrapper {
-  padding: 0 $indents;
   margin: 0 auto;
   outline: 1px solid ;
   text-align: center;
   background-color: $color-gray-light;
 }
-
 
 .page-footer__logo {
   display: none;
@@ -23,13 +21,14 @@
   .page-footer__wrapper {
     padding: 0;
     display: flex;
-    flex-direction: row;
     max-width: $tablet-width;
   }
 
   .page-footer__logo {
   display: block;
   margin: auto 0;
+  text-align: left;
+  padding-left: $indents-tablet;
 }
 
   .page-footer__logo,
@@ -38,19 +37,21 @@
     width: 34%;
   }
 
-  .page-footer__logo {
-    text-align: left;
-  }
-
   .copyright {
     margin-left: auto;
+    padding-right: $indents-tablet;
   }
 }
 
 @media (min-width: $desktop-width) {
-.page-footer {
-  max-width: 1150px;
-  padding: 0 50px;
+  /*Не понимаю почему тут задаю ширину через перемнную, а блок обрезанный*/
+  .page-footer__wrapper{
+    max-width: $desktop-width;
+    min-height: 144px;
+  }
 
-}
+  .copyright {
+    margin-left: auto;
+    padding-right: $indents-desktop;
+  }
 }

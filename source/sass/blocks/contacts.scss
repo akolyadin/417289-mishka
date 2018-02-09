@@ -1,6 +1,6 @@
 .contacts__wrapper {
-   padding-top: 42px;
-   outline: 1px solid red;
+  padding-top: 42px;
+  outline: 1px solid red;
 }
 
 .contacts__title,
@@ -57,7 +57,6 @@
 
   .contacts__item {
     padding-top: 66px;
-    width: 50%;
   }
 
   .contacts__title {
@@ -72,8 +71,22 @@
 }
 
 @media (min-width: $desktop-width) {
-.contacts__wrapper {
-padding: 0 $indents-desktop;
-    }
+  .contacts__wrapper {
+    width: 1250px;
+    position: relative;
+  }
 
+  .contacts__title,
+  .contacts__inner {
+    width: 350px;
+    padding: 0 0 0 275px;
+  }
+
+  .contacts__title{
+    padding-bottom: 66px;
+
+  .contacts__item {
+    padding-bottom: 50px;
+  }
+}
 }

@@ -31,12 +31,10 @@
   outline: 1px solid green;
 }
 
-
 .reviews__toggles,
 .reviews__btn {
   text-align: center;
 }
-
 
 @media (min-width: $tablet-width) {
   .reviews__wrapper {
@@ -45,7 +43,6 @@
     background-repeat: no-repeat;
     flex-direction: row;
     flex-wrap: wrap;
-
   }
 
   .reviews__title {
@@ -64,9 +61,8 @@
   }
 
   .review__author {
-  padding-top: 72px;
-}
-
+    padding-top: 72px;
+  }
 
   .reviews__toggles {
     order: 3;

@@ -2,8 +2,8 @@
   margin: 0 auto;
   box-sizing: border-box;
   outline: 1px solid black;
-
 }
+
 .page-header__title {
   padding: 74px $indents 0;
   text-align: center;
@@ -18,6 +18,7 @@
 
 .page-header__intro {
   background-color: $color-gray-light;
+  min-height: 177px;
 
   &--image {
     min-height: 283px;
@@ -28,7 +29,7 @@
 }
 
 @media (min-width: $tablet-width) {
-   .page-header {
+  .page-header {
     max-width: $tablet-width;
     padding: 0;
   }
@@ -41,11 +42,12 @@
   }
 
   .page-header__intro {
-    padding: 0;
-    min-height: 500px;
-    margin-top: -73px;
     padding: 0 $indents-tablet;
+    margin-top: -73px;
 
+    &--image {
+    min-height: 500px;
+    }
   }
 
   .page-header__intro--image {
@@ -53,7 +55,7 @@
   }
 
   .page-header__title {
-    padding: 171px 88px 0;
+    padding: 103px 88px 83px;
   }
 
 }

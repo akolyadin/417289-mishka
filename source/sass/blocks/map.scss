@@ -9,3 +9,13 @@
     padding: 61px 0 55px;
   }
 }
+
+/*С какртой какие то таблы*/
+@media (min-width: $desktop-width) {
+  .map {
+    padding: 0;
+    position: absolute;
+    left: 625px;
+    top: -1px;
+  }
+}
