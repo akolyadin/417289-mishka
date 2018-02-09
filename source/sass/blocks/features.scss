@@ -1,5 +1,6 @@
-.features {
+.features__wrapper {
   padding: 0 $indents;
+  outline: 1px solid green;
 }
 
 .features_title {
@@ -7,22 +8,24 @@
   padding: 36px 0 31px;
 
   @include font(25px, 30px);
+  outline: 1px solid yellow;
 }
 
 .features__list {
   padding: 0;
   margin: 0;
+  outline: 1px solid red;
 }
 
 .feature-item {
   list-style-type: none;
   font-weight: $weight;
-  padding-bottom: 36px;
+  outline: 1px solid orange;
 }
 
 @media (min-width: $tablet-width) {
-  .features {
-    padding: 0 $indents-tablet;
+  .features__wrapper {
+    padding: 0 $indents-tablet 87px;
   }
 
   .features_title {
@@ -42,7 +45,11 @@
 
 @media (min-width: $desktop-width) {
   .features__wrapper {
-    padding: 0 225px;
+    padding: 0 $indents-desktop;
+  }
+
+  .feature-item {
+    width: 350px;
   }
 
   .feature-item--eco {

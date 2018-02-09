@@ -1,20 +1,21 @@
 .page-main {
   margin: 0 auto;
   box-sizing: border-box;
+  outline: 1px solid blue;
 }
 
 
 @media (min-width: $tablet-width) {
   .page-main {
     padding: 0;
+    max-width: $tablet-width;
   }
 }
 
 
 @media (min-width: $desktop-width) {
   .page-main {
-    max-width: 1150px;
-  padding: 0 50px;
+    max-width: 1250px;
   }
 }
 

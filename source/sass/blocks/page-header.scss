@@ -1,6 +1,8 @@
 .page-header {
   margin: 0 auto;
   box-sizing: border-box;
+  outline: 1px solid black;
+
 }
 .page-header__title {
   padding: 74px $indents 0;
@@ -26,6 +28,11 @@
 }
 
 @media (min-width: $tablet-width) {
+   .page-header {
+    max-width: $tablet-width;
+    padding: 0;
+  }
+
   .page-header__offer {
     display: block;
     margin: 0;
@@ -34,9 +41,11 @@
   }
 
   .page-header__intro {
-    padding: 0 $indents-tablet;
+    padding: 0;
     min-height: 500px;
     margin-top: -73px;
+    padding: 0 $indents-tablet;
+
   }
 
   .page-header__intro--image {
@@ -44,14 +53,14 @@
   }
 
   .page-header__title {
-    padding: 171px  180px 0;
+    padding: 171px 88px 0;
   }
+
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    max-width: 1150px;
-    padding: 0 50px;
+    max-width: 1250px;
   }
 
   .page-header__intro {
@@ -69,5 +78,6 @@
 
   .page-header__offer {
     padding-right: $indents-desktop;
+    text-align: right;
   }
 }

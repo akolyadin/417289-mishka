@@ -1,16 +1,17 @@
 .contacts__wrapper {
-  display: flex;
-  flex-direction: column;
+   padding-top: 42px;
+   outline: 1px solid red;
 }
 
 .contacts__title,
 .contacts__inner {
   padding: 0 $indents;
   margin: 0;
+
 }
 
 .contacts__title {
-  padding-top: 43px;
+  outline: 1px solid green;
 
   @include font(25px, 30px);
 }
@@ -18,12 +19,14 @@
 .contacts__item {
   display: flex;
   flex-wrap: wrap;
+  outline: 1px solid red;
 }
 
 .contacts__label,
 .contacts__text {
   margin: 0;
   padding: 0;
+  outline: 1px solid orange;
 }
 
 .contacts__label {
@@ -31,11 +34,17 @@
 }
 
 .contacts__btn {
-  padding: 39px $indents;
+  padding: 0 $indents 39px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
+  .contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 69px;
+}
+
   .contacts__inner {
     display: flex;
     flex-direction: row;
@@ -47,6 +56,7 @@
   }
 
   .contacts__item {
+    padding-top: 66px;
     width: 50%;
   }
 
@@ -57,13 +67,13 @@
   .contacts__btn {
     width: 230px;
     margin: 0 auto;
-    padding: 55px 0 57px;
+    padding-bottom: 57px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .contacts__title,
-  .contacts__inner {
-    padding: 0 $indents-desktop 0 275px;
-  }
+.contacts__wrapper {
+padding: 0 $indents-desktop;
+    }
+
 }

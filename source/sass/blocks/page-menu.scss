@@ -40,8 +40,7 @@
 
 @media (min-width: $desktop-width) {
   .page-menu__list {
-    display: flex;
-    padding: 0 $indents-desktop;
+    padding:  0 $indents-desktop;
   }
 
   .page-menu__item {
