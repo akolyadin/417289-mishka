@@ -1,4 +1,15 @@
-.form {
-  outline: 1px solid $color-black;
-  padding: 0 $indents;
+.form__wrapper {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .form__wrapper {
+    max-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    max-width: $desktop-width;
+  }
 }

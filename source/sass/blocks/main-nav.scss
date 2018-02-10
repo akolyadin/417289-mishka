@@ -1,20 +1,150 @@
 .main-nav {
-  outline: 1px solid $color-black;
-
   @include font-set($weight, 17px, 24px);
+  width: 100%;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 27px;
+  right: $indents;
 }
 
 .main-nav__list {
   padding: 0;
+  margin: 0;
+  outline: 1px solid blue;
 }
 
 .main-nav__item {
-  padding: 28px 0;
-  text-align: center;
+  padding: 0 $indents;
   list-style-type: none;
+  outline: 1px solid red;
+  text-align: left;
+}
+
+.main-nav__item--home {
+  text-align: center;
+}
+
+.main-nav__item--new,
+.main-nav__item--sale {
+  display: none;
 }
 
 .main-nav__link {
+  display: block;
   text-decoration: none;
   color: $color-black;
+  padding: 25px 0 25px 45px;
+}
+
+.main-nav__link--home {
+  padding: 25px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 $indents-tablet;
+  }
+
+  .main-nav__item {
+    padding: 0;
+  }
+
+  .main-nav__link {
+    padding: 25px 0;
+  }
+
+  .main-nav__item--home {
+    order: 0;
+    margin-right: auto;
+    text-align: left;
+    width: 321px;
+  }
+
+  .main-nav__item--search {
+    order: 1;
+    width: 82px;
+  }
+
+  .main-nav__link--hidden {
+    display: none;
+  }
+
+  .main-nav__item--basket {
+    order: 2;
+    width: 264px;
+    text-align: right;
+  }
+
+  .main-nav__item--catalog,
+  .main-nav__item--form,
+  .main-nav__item--new,
+  .main-nav__item--sale {
+    text-align: left;
+  }
+
+  .main-nav__item--catalog {
+    padding-right: 36px;
+    order: 3;
+  }
+
+  .main-nav__item--form {
+    order: 4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    padding: 0 $indents-desktop;
+  }
+
+  .main-nav__item--home {
+    order: 2;
+    width: 0;
+    padding: 0;
+  }
+
+  .main-nav__item--search {
+    order: 3;
+    width: 83px;
+  }
+
+  .main-nav__item--basket {
+    order: 4;
+    width: 267px;
+    text-align: right;
+  }
+
+  .main-nav__item--catalog {
+    padding-right: 0;
+    width: 184px;
+    order: 0;
+  }
+
+  .main-nav__item--form {
+    padding-left: 36px;
+    order: 1;
+  }
+
+  .main-nav__item--new {
+    order: 5;
+    width: 184px;
+  }
+
+  .main-nav__item--sale {
+    padding-left: 36px;
+    order: 6;
+  }
+
+  .main-nav__item--new,
+  .main-nav__item--sale {
+    display: block;
+  }
 }
