@@ -75,6 +75,10 @@
     position: relative;
   }
 
+  .contacts__inner {
+    flex-direction: column;
+  }
+
   .contacts__title,
   .contacts__inner {
     width: 350px;
@@ -82,10 +86,17 @@
   }
 
   .contacts__title {
-    padding-bottom: 66px;
+    padding-bottom: 16px;
   }
 
   .contacts__item {
-    padding-bottom: 50px;
+    padding-top: 49px;
   }
+
+  .contacts__btn {
+    margin: 0;
+    padding: 88px 0 105px 275px;
+  }
+
+
 }
