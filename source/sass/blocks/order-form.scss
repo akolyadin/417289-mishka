@@ -48,7 +48,6 @@
   display: block;
 
   @include font-set($weight, 17px, 18px)
-
 }
 
 .order-form__input-radio,
@@ -106,44 +105,18 @@ input::-webkit-input-placeholder {
 .order-form__footer {
   margin: 18px 0 55px;
 }
+
 .order-form__required {
 
   @include font-set(100, 14px, 16px)
+
 }
+
 .order-form__btn {
   display: block;
   width: 100%;
   margin-top: 34px;
-
 }
-
-/*
-.order-form__input-radio + .order-form__radio {
-  position: absolute;
-  top: -7px;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  border: 3px solid #444444;
-  border-radius: 50%; }
-
-.order-form__input-radio:hover + .order-form__radio {
-  border-color: #62d1ba; }
-
-.order-form__input-radio:active + .order-form__radio  {
-  border-color: #c7c7c7; }
-
-.order-form__input-radio:checked + .order-form__radio::before {
-  content: "";
-  position: absolute;
-  left: 9px;
-  top: 9px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: #62d1ba; }
-*/
-
 
 @media (min-width: $tablet-width) {
   .order-form__text {
@@ -207,8 +180,7 @@ input::-webkit-input-placeholder {
     height: 303px;
     flex-wrap: wrap;
     justify-content: space-between;
-
-}
+  }
 
   .order-form__footer {
     display: flex;
@@ -221,6 +193,7 @@ input::-webkit-input-placeholder {
     width: 230px;
     order: -1;
   }
+
   .order-form__required {
     margin: auto 0 auto auto;
   }

@@ -1,7 +1,8 @@
-  .prod-process__wrapper {
+.prod-process__wrapper {
   margin: 31px $indents 0;
   border: 1px solid $color-gray-light;
 }
+
 .prod-process__title {
   padding: 30px 0 30px 91px;
   margin: 0;
@@ -33,28 +34,26 @@
   }
 
   .prod-process__preview {
-    order: 0
+    order: 0;
   }
 
   .prod-process__title {
     padding: 39px 42px 0 108px;
-    order: 1
+    order: 1;
   }
 
   .prod-process__footer {
     order: 2;
+    padding: 46px 42px 0;
   }
+
   .prod-process__video {
     width: 100%;
   }
 
-  .prod-process__footer {
-    padding: 46px 42px 0;
-  }
-
   .prod-process__description {
-  padding-bottom: 44px;
-}
+    padding-bottom: 44px;
+  }
 
   .prod-process__btn {
     margin-bottom: 46px;
