@@ -64,11 +64,14 @@
   .prod-process__wrapper {
     margin: 0 $indents-desktop 105px;
     align-items: flex-end;
+    position: relative;
   }
 
   .prod-process__video {
     width: 500px;
     position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .prod-process__title {
