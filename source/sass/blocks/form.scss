@@ -1,6 +1,7 @@
 .form__wrapper {
   margin: 0 auto;
   padding: 0 $indents;
+  outline: 1px solid black;
 }
 
 @media (min-width: $tablet-width) {
