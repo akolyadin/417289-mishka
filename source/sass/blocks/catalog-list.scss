@@ -1,3 +1,17 @@
-.catalog-list {
+.catalog-list__wrapper {
   padding: 0 $indents;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-list__wrapper {
+    padding: 80px $indents-tablet 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-list__wrapper {
+    padding: 130px $indents-desktop 57px;
+    display: flex;
+    justify-content: space-between;
+  }
 }

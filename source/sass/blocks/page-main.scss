@@ -13,6 +13,6 @@
 
 @media (min-width: $desktop-width) {
   .page-main {
-    max-width: 1250px;
+    max-width: $desktop-width;
   }
 }

@@ -7,29 +7,68 @@
   text-align: center;
 }
 
-.catatalog-item {
-  padding: 0;
+.catalog-item {
+  margin-bottom: 30px;
   text-align: left;
-  border-right: 1px solid $color-gray-light;
+  border: 1px solid $color-gray-light
 }
 
-.catatalog-item__description {
-  text-align: left;
-  padding: 30px;
+.catalog-item__title {
+  margin: 0;
 }
 
-.catatalog-item__header {
+.catalog-item__parameters {
+  margin: 0;
+  padding: 22px 0 28px;
+}
+
+.catalog-item__description {
+  text-align: left;
+  padding: 30px 30px 27px;
+}
+
+.catalog-item__header {
   border-bottom: 1pt solid $color-gray-light;
 }
 
+.catalog-item__footer {
+  padding-top: 27px;
+}
+
 @media (min-width: $tablet-width) {
+  /*Не понимаю почему задаю все отсупы как в макете а на деле в браузере получается 380 а в макете 334*/
   .catalog-item {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
   }
 
-  .catatalog-item__description {
-    padding-left: 27px;
+  .catalog-item__description {
+    padding: 29px 33px 0;
     width: 50%;
+  }
+
+  .catalog-item__parameters {
+    padding: 20px 0 182px;
+}
+
+.catalog-item__footer {
+  padding: 27px 0 32px;
+}
+}
+
+
+@media (min-width: $desktop-width) {
+  .catalog-item {
+    width: 316px;
+    margin: 0;
+  }
+  .catalog-item__description {
+    padding: 29px 28px 0;
+    width: 256px;
+  }
+
+  .catalog-item__parameters {
+    padding-bottom: 48px;
   }
 }

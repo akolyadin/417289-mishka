@@ -19,6 +19,7 @@
 .page-header__intro {
   background-color: $color-gray-light;
   min-height: 177px;
+  z-index: -1;
 
   &--image {
     min-height: 283px;
@@ -32,6 +33,7 @@
   .page-header {
     max-width: $tablet-width;
     padding: 0;
+    position: relative;
   }
 
   .page-header__offer {
@@ -43,7 +45,7 @@
 
   .page-header__intro {
     padding: 0 $indents-tablet;
-    margin-top: -73px;
+    margin-top: -53px;
 
     &--image {
       min-height: 500px;
@@ -51,18 +53,40 @@
     }
   }
 
+  .page-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+  radial-gradient(circle at 10px -5px, transparent 12px, $color-white 13px);
+  }
+
+.page-header::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, $color-white 12px, transparent 13px);
+}
+
   .page-header__title {
-    padding: 103px 88px 83px;
+    padding: 77px 88px 83px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    max-width: 1250px;
-  }
-
-  .page-header__intro {
-    min-height: 500px;
+    max-width: $desktop-width;
   }
 
   .page-header__intro--image {
@@ -70,12 +94,4 @@
     background-position: bottom;
   }
 
-  .page-header__title {
-    padding: 171px  180px 0;
-  }
-
-  .page-header__offer {
-    padding-right: $indents-desktop;
-    text-align: right;
-  }
 }

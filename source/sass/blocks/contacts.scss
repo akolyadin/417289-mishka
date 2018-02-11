@@ -33,8 +33,9 @@
 }
 
 .contacts__btn {
-  padding: 0 $indents 39px;
+  padding: 0 $indents;
   text-align: center;
+  margin-bottom: 39px;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,7 +66,7 @@
   .contacts__btn {
     width: 230px;
     margin: 0 auto;
-    padding-bottom: 57px;
+    margin-bottom: 57px;
   }
 }
 

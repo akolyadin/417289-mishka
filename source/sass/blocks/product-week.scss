@@ -90,8 +90,8 @@
   }
 
   .product-week__description {
-    width: 50%;
-    padding-top: 66px;
+    width: 290px;
+    padding: 66px 43px 0 0;
   }
 
   .product-week__image {
@@ -100,12 +100,16 @@
 
   .product-week__footer {
     width: 50%;
-    margin-top: -100px;
+    margin-top: -155px;
   }
 
-  .product-week__price,
-  .product-week__btn {
+  .product-week__price {
     padding-right: 43px;
+  }
+
+  .product-week__btn {
+    margin: 39px 43px 0 0;
+    display: block;
   }
 }
 
@@ -137,9 +141,8 @@
   }
 
   .product-week__description {
-    padding-left: 225px;
-    width: 350px;
-  }
+    padding: 0 60px 0 175px;
+    }
 }
 /*
   .product-week__text {

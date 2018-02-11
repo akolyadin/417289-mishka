@@ -1,0 +1,23 @@
+.btn {
+  border: 2px solid $color-gray-dark;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: $font-main;
+  color: $color-gray-dark;
+  background-color: $color-white;
+  padding: 20px 0;
+  @include font-set(bold, 17px, 20px);
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #444444;
+  border: 2px solid #444444;
+  transition: all 0.2s;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  transition: all 0.2s;
+}

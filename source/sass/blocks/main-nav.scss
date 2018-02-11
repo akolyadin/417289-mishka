@@ -39,7 +39,7 @@
 }
 
 .main-nav__link--home {
-  padding: 25px 0;
+  padding: 25px 0 25px 45px;
 }
 
 @media (min-width: $tablet-width) {
@@ -58,7 +58,7 @@
   }
 
   .main-nav__link {
-    padding: 25px 0;
+    padding: 0;
   }
 
   .main-nav__item--home {
@@ -73,6 +73,7 @@
     width: 82px;
   }
 
+
   .main-nav__link--hidden {
     display: none;
   }
@@ -81,6 +82,7 @@
     order: 2;
     width: 264px;
     text-align: right;
+    padding: 25px 0 40px;
   }
 
   .main-nav__item--catalog,
@@ -91,11 +93,12 @@
   }
 
   .main-nav__item--catalog {
-    padding-right: 36px;
+    padding: 24px 36px 0 0;
     order: 3;
   }
 
   .main-nav__item--form {
+    padding: 24px 0 0 0;
     order: 4;
   }
 }
