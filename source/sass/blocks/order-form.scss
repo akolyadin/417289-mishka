@@ -46,7 +46,6 @@
   display: block;
 
   @include font-set($weight, 17px, 18px);
-
 }
 
 .order-form__input-radio,
@@ -69,7 +68,6 @@
   font-family: $font-main;
 
   @include font-set($weight, 17px, 19px);
-
 }
 
 .order-form__input-tel,
@@ -108,7 +106,6 @@ input::-webkit-input-placeholder {
 .order-form__required {
 
   @include font-set(100, 14px, 16px);
-
 }
 
 .order-form__btn {

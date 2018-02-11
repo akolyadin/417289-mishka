@@ -10,7 +10,7 @@
 .catalog-item {
   margin-bottom: 30px;
   text-align: left;
-  border: 1px solid $color-gray-light
+  border: 1px solid $color-gray-light;
 }
 
 .catalog-item__title {
@@ -50,11 +50,11 @@
 
   .catalog-item__parameters {
     padding: 20px 0 182px;
-}
+  }
 
-.catalog-item__footer {
-  padding: 27px 0 32px;
-}
+  .catalog-item__footer {
+    padding: 27px 0 32px;
+  }
 }
 
 
@@ -63,6 +63,7 @@
     width: 316px;
     margin: 0;
   }
+
   .catalog-item__description {
     padding: 29px 28px 0;
     width: 256px;
