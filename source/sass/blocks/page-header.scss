@@ -1,15 +1,14 @@
 .page-header {
   margin: 0 auto;
   box-sizing: border-box;
-  outline: 1px solid black;
 }
 
 .page-header__title {
-  padding: 74px $indents 0;
+  padding: 70px $indents 0;
   text-align: center;
   margin: 0;
 
-  @include font(27px, 30px);
+  @include font-set($weight, 27px, 30px);
 }
 
 .page-header__offer {
@@ -38,8 +37,9 @@
 
   .page-header__offer {
     display: block;
+    bottom: 17px;
     margin: 0;
-    padding-top: 24px;
+    padding-top: 61px;
     text-align: right;
   }
 
@@ -48,11 +48,11 @@
     margin-top: -53px;
 
     &--image {
-      min-height: 500px;
+      min-height: 634px;
       background-position: bottom;
     }
   }
-
+/*
   .page-header::before {
     content: "";
     position: absolute;
@@ -76,9 +76,9 @@
     background-size: 40px 20px;
     background-image: radial-gradient(circle at 10px 15px, $color-white 12px, transparent 13px);
   }
-
+*/
   .page-header__title {
-    padding: 77px 88px 83px;
+    @include font-set($weight, 43px, 50px);
   }
 }
 

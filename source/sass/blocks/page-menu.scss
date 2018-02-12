@@ -9,10 +9,8 @@
 
 .page-menu__item {
   list-style-type: none;
-  padding: 31px 30px 36px;
   background-color: $color-blue-lighter;
 
-  @include font(19px, 24px);
 }
 
 .page-menu__item:nth-child(2n) {
@@ -23,18 +21,33 @@
   display: block;
   text-decoration: none;
   color: $color-white;
-  font-weight: $weight;
-  width: 130px;
+  padding: 25px 118px 30px 28px;
+  @include font-set($weight, 19px, 24px);
+
+  &:active {
+    color: fade($color-white, 30%);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-menu__list {
     display: flex;
-    padding: 0 $indents-tablet;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 668px;
+    margin: 0 auto;
+    position: relative;
   }
 
   .page-menu__item {
-    width: 100%;
+    width: 334px;
+    display: flex;
+     transition: transform 0.2s ease;
+  }
+
+  .page-menu__link {
+    @include font(20px, 30px);
+    padding: 29px 167px 0 36px;
   }
 }
 

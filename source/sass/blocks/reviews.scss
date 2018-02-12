@@ -1,38 +1,60 @@
 .reviews__wrapper {
-  padding: 55px $indents 45px;
-  display: flex;
-  flex-direction: column;
-  outline: 1px solid blue;
+  padding: 24px $indents 45px;
 }
 
 .reviews__title {
-  margin: 0 auto 0 0;
-  outline: 1px solid red;
-}
+  margin: 0 0 25px;
 
-.reviews__list {
-  padding-top: 38px;
+  @include font-set($weight, 25px, 30px);
 }
 
 .review__item {
-  margin: 0;
+  margin: 0 0 29px;
+  padding: 0;
+
 }
 
 .review__text {
-  margin: 0;
-  outline: 1px solid green;
+  margin: 0 0 23px;
+  padding: 0;
+
+  @include font-set(normal, 15px, 30px);
 }
 
 .review__author {
-  padding-top: 41px;
-  display: flex;
-  flex-direction: column;
-  outline: 1px solid green;
+  display: block;
+  font-style: normal;
+
+  @include font-set($weight, 17px, 30px);
 }
 
-.reviews__toggles,
+.review__author-nick {
+  display: block;
+  @include font-set(normal, 17px, 30px)
+}
+
+.reviews__toggles {
+  display: flex;
+  margin: 0 0 38px;
+  padding: 0;
+}
+
+.slider__btn {
+  width: 130px;
+  height: 52px;
+  background-color: transparent;
+  background-size: 51px 26px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  border: 1px solid $color-gray-light;
+}
+
 .reviews__btn {
   text-align: center;
+  display: block;
+
+  @include font-set($weight, 18px, 20px);
 }
 
 @media (min-width: $tablet-width) {

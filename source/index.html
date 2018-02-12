@@ -9,12 +9,12 @@
   <body>
     <header class="page-header">
       <div class="page-header__top">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--home">
               <a class="main-nav__link main-nav__link--home" href="#">
-                <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="89" height="36" alt="Мишка">
+                <img class="main-nav__logo-image" src="../img/logo-mobile.svg" width="89" height="35" alt="Мишка">
               </a>
             </li>
             <li class="main-nav__item main-nav__item--catalog">
@@ -93,12 +93,12 @@
         <div class="features__wrapper">
           <h2 class="features_title">Коротко о нас:</h2>
           <ul class="features__list">
-            <li class="feature-item feature-item--eco">Экологически<br>чистые материалы</li>
-            <li class="feature-item feature-item--price">Скандинавский стиль<br>по российской цене</li>
-            <li class="feature-item feature-item--like">Увеличивает лайки<br>на фотографиях</li>
-            <li class="feature-item feature-item--love">Связано вручную с<br>любовью и умилением</li>
-            <li class="feature-item feature-item--support">Поддержка отечественного<br>производителя</li>
-            <li class="feature-item feature-item--present">Поставляется в<br>подарочной упаковке</li>
+            <li class="feature-item feature-item--flower">Экологически<br>чистые материалы</li>
+            <li class="feature-item feature-item--money">Скандинавский стиль<br>по российской цене</li>
+            <li class="feature-item feature-item--heart">Увеличивает лайки<br>на фотографиях</li>
+            <li class="feature-item feature-item--ball">Связано вручную с<br>любовью и умилением</li>
+            <li class="feature-item icon-feature-rocket">Поддержка отечественного<br>производителя</li>
+            <li class="feature-item feature-item--gift">Поставляется в<br>подарочной упаковке</li>
           </ul>
         </div>
       </section>
@@ -123,15 +123,17 @@
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
+          <h2 class="contact__title">Контакты</h2>
           <div class="contacts__inner">
-            <div class="contacts__item">
-              <p class="contacts__label">e-mail:</p>
-              <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            <div class="contact__item">
+              <p class="contact__label">e-mail:</p>
+              <p class="contact__text">
+                <a class="contact__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </p>
             </div>
-            <div class="contacts__item">
-              <p class="contacts__label">Адрес:</p>
-              <p class="contacts__text">г.Санкт-Петербург,<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</p>
+            <div class="contact__item">
+              <p class="contact__label">Адрес:</p>
+              <p class="contact__text">г.Санкт-Петербург,<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</p>
             </div>
           </div>
           <div class="map">
@@ -150,21 +152,28 @@
           <div class="social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--instagram" href=#>Instagram</a>
+                <a class="social__link social__link--instagram" href=#>
+                  <span class="visually-hidden">Instagram</span>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href=#>Facebook</a>
+                <a class="social__link social__link--facebook" href="#">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--tweeter" href=#>Twitter</a>
+                <a class="social__link social__link--tweeter" href="#">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
               </li>
             </ul>
           </div>
         </div>
         <div class="page-footer__copyright">
           <div class="copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__text">Разработано</b>
-            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <span class="visually-hidden">HTML Academy</span></a>
           </div>
         </div>
       </div>

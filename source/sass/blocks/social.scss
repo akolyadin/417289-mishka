@@ -1,10 +1,49 @@
 .social__list {
   margin: 0;
-  padding: 0;
+  padding: 0 0 10px;
   list-style-type: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin-right: 8px;
+}
+
+.social__link {
+  min-width: 50px;
+  min-height: 50px;
+
+  display: flex;
+  justify-content: center;
   align-items: center;
-  min-height: 81px;
-  outline: 1px solid orange;
+  background-repeat: no-repeat;
+}
+
+.social__image {
+  fill: #231f20;
+
+  &:hover {
+    fill: $color-blue-darker;
+  }
+  &:active {
+    fill: fade($color-blue-darker, 30%);
+  }
+}
+
+.social__link--instagram {
+  background-image: url("../img/icon-insta.svg");
+}
+
+.social__link--facebook {
+  background-image: url("../img/icon-fb.svg");
+}
+
+.social__link--tweeter {
+  background-image: url("../img/icon-twitter.svg");
+}
+
+.copyright__logo {
+  background-image: url("../img/htmlacademy.svg")
 }
