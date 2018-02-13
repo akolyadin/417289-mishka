@@ -15,10 +15,6 @@
   @include font-set($weight, 27px, 30px);
 }
 
-.page-header__offer {
-  display: none;
-}
-
 .page-header__intro {
   background-color: $color-gray-light;
   min-height: 177px;
@@ -36,23 +32,14 @@
   .page-header {
     max-width: $tablet-width;
     padding: 0;
-    position: relative;
-  }
-
-  .page-header__offer {
-    display: block;
-    margin: 0 auto;
-    padding-top: 16px;
-    text-align: right;
-    @include font(15px, 24px);
   }
 
   .page-header__intro {
     padding: 0 $indents-tablet;
-    margin-top: -80px;
+    margin-top: -43px;
 
     &--image {
-      min-height: 625px;
+      min-height: 629px;
       background-position: bottom;
     }
   }
@@ -88,11 +75,12 @@
   .page-header__title {
     @include font-set($weight, 43px, 50px);
     padding: 0px;
-    margin-top: 111px;
+    padding-top: 156px;
   }
 
   .page-header__title--no-image {
-    margin-top: 50px;
+    margin-top: 0px;
+    padding-top: 95px;
   }
 }
 
@@ -105,7 +93,12 @@
 
   .page-header__title {
     @include font-set($weight, 53px, 57px);
+  }
 
+  .page-header__title--no-image {
+    margin-top: 0px;
+    padding-top: 95px;
+    padding-bottom: 108px;
   }
 
   .page-header__offer {
@@ -119,10 +112,10 @@
 
   .page-header__intro {
     padding: 0 $indents-tablet;
-    margin-top: -80px;
+    margin-top: -42px;
 
     &--image {
-      min-height: 637px;
+      min-height: 626px;
       background-position: bottom;
     }
   }

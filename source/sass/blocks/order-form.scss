@@ -1,36 +1,42 @@
 .order-form__text {
-  margin: 26px 0;
-  padding: 0;
-  outline: 1px solid orange;
+  margin: 22px 0;
+  padding: 0 30px;
+
+  @include font(13px, 24px)
+}
+
+.order-form__wrapper {
+  margin: 0 28px;
 }
 
 .order-form__item {
   margin: 0;
   padding: 0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .order-form__row {
   list-style-type: none;
-  min-height: 76px;
   position: relative;
-  display: block;
+  padding-top: 15px;
 }
 
 .order-form__title {
-  font-weight: $weight;
   width: 100%;
   text-transform: uppercase;
   color: $color-blue-lighter;
   position: relative;
-  outline: 1px solid red;
   margin: 0;
+
+  @include font-set($weight, 17px, 16px)
 }
 
 .order-form__title::after {
   content: "";
   position: absolute;
   height: 1px;
-  width: 85%;
+  width: 75%;
   top: 50%;
   left: 62px;
   background-color: #63d1bb;
@@ -38,9 +44,8 @@
 
 .order-form__group {
   margin: 0;
-  padding: 39px 0 45px;
+  padding: 10px 0 0;
   list-style-type: none;
-  outline: 1px solid red;
 }
 
 .order-form__group--full-name {
@@ -48,8 +53,7 @@
 }
 
 .order-form__label {
-  outline: 1px solid orange;
-  margin: auto 0;
+  padding-top: 10px;
   cursor: pointer;
 
   @include font-set($weight, 17px, 18px)
@@ -60,7 +64,7 @@
   margin-left: 63px;
 }
 
-.order-form__label--full-name {
+.order-form__label {
   display: block;
 }
 
@@ -81,7 +85,7 @@
   vertical-align: top;
   cursor: pointer;
   text-align: center;
-  top: 20px;
+  top: 12px;
   left: 0px;
   border: 2px solid $color-gray-dark;
 }

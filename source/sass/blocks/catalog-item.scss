@@ -110,16 +110,30 @@
 
 @media (min-width: $desktop-width) {
   .catalog-item {
-    width: 316px;
+    justify-content: space-between;
+    width: 312px;
     margin: 0;
+    padding: 0;
   }
 
   .catalog-item__description {
-    padding: 29px 28px 0;
-    width: 256px;
+    padding: 0;
+    margin-top: 15px;
+  }
+
+  .catalog-item__image {
+    width: 332px;
+    height: 460px;
+    outline: 1px solid red;
   }
 
   .catalog-item__parameters {
-    padding-bottom: 48px;
+    padding-bottom: 0px;
+    margin-bottom: 38px;
   }
+
+  .catalog-item__footer {
+   margin-bottom: 10px
+  }
+
 }

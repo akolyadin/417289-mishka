@@ -15,8 +15,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog-list__wrapper {
-    padding: 130px $indents-desktop 57px;
-    display: flex;
+    max-width: $desktop-width;
     justify-content: space-between;
+    margin-bottom: 56px;
   }
 }

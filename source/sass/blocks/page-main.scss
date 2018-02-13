@@ -2,6 +2,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   max-width: $mobile-width;
+  padding: 0 $indents;
 }
 
 @media (min-width: $tablet-width) {

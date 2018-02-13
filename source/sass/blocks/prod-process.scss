@@ -15,7 +15,7 @@
 
 .prod-process__title {
   margin-top: 24px;
-  margin-left: 60px;
+  margin-left: 80px;
   margin-bottom: 25px;
   padding-left: 10px;
 
@@ -38,7 +38,8 @@
 .prod-process__description {
   margin: 0;
   margin-bottom: 26px;
-  @include font(13px, 24px)
+
+  @include font(13px, 24px);
 }
 
 .prod-process__footer {
@@ -67,8 +68,6 @@
     padding: 46px 42px 0;
   }
 
-
-
   .prod-process__description {
     padding-bottom: 44px;
   }
@@ -87,15 +86,27 @@
 
   .prod-process__video {
     width: 500px;
+    height: 400px;
     position: absolute;
     top: 0;
     left: 0;
   }
 
-  .prod-process__title {
-    padding: 100px 60px 47px 60px;
-    width: 350px;
+  .prod-process__header {
+    padding: 0;
+    margin-top: 43px;
+    padding: 30px 70px;
+    width: 368px;
     box-sizing: border-box;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  .prod-process__title {
+    margin-left: 0;
+    margin-bottom: 0;
+
+    @include font(20px, 24px);
   }
 
   .prod-process__footer {
@@ -105,9 +116,17 @@
 
   .prod-process__description {
     padding: 0 60px 0;
+
+    @include font(15px, 30px);
   }
 
   .prod-process__btn {
-    margin: 55px 60px 60px;
+    margin: 45px 63px 30px;
+  }
+
+  .prod-process__icon-camera {
+    position: absolute;
+    top: 0;
+    left: 81px;
   }
 }
