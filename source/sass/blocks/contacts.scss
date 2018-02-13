@@ -26,7 +26,7 @@
   margin: 0;
   padding: 15px 0;
 
-  @include font-set(normal, 15px, 30px)
+  @include font-set(normal, 15px, 30px);
 }
 
 .contact__label {
@@ -64,33 +64,57 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    display: flex;
-    flex-direction: column;
-    padding-top: 69px;
+    max-width: $tablet-width;
+    padding-top: 61px;
+    padding-bottom: 0;
   }
 
-  .contacts__inner {
-    display: flex;
-    flex-direction: row;
+
+  .contact__title {
+    padding: 0 55px 0 $indents-tablet;
+    margin-left: -4px;
+    margin-bottom: 34px;
+    position: relative;
+
+    @include font(43px, 50px);
   }
 
-  .contacts__title,
+  .contact__title::after {
+    content: "";
+    display: block;
+    width: 47px;
+    height: 81px;
+    position: absolute;
+    right: 52px;
+    top: -15px;
+    background-image: url("../img/icon-flag.svg");
+  }
+
   .contacts__inner {
     padding: 0 $indents-tablet;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 41px;
   }
 
   .contacts__item {
     padding-top: 66px;
   }
 
-  .contacts__title {
-    font-size: $size-h2-table;
+  .contact__label {
+    width: 65px;
+
+    @include font(17px, 30px);
+  }
+
+  .contact__text {
+    width: 255px;
+     @include font(17px, 30px);
   }
 
   .contacts__btn {
     width: 230px;
-    margin: 0 auto;
-    margin-bottom: 57px;
+    margin: 0 auto 57px;
   }
 }
 

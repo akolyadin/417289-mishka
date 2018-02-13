@@ -10,7 +10,7 @@
 .page-menu__item {
   list-style-type: none;
   background-color: $color-blue-lighter;
-
+  position: relative;
 }
 
 .page-menu__item:nth-child(2n) {
@@ -21,11 +21,31 @@
   display: block;
   text-decoration: none;
   color: $color-white;
-  padding: 25px 118px 30px 28px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 28px;
+  padding-right: 118px;
+
   @include font-set($weight, 19px, 24px);
 
   &:active {
     color: fade($color-white, 30%);
+  }
+
+.page-menu__icon {
+  position: absolute;
+
+  opacity: 0.5;
+
+    &--interior {
+      right: 36px;
+      top: 25px;
+    }
+
+    &--toy {
+      right: 27px;
+      top: 23px;
+    }
   }
 }
 
@@ -42,21 +62,39 @@
   .page-menu__item {
     width: 334px;
     display: flex;
-     transition: transform 0.2s ease;
   }
 
   .page-menu__link {
-    @include font(20px, 30px);
     padding: 29px 167px 0 36px;
+
+    @include font(20px, 30px);
   }
+
+
+.page-menu__icon {
+  &--interior {
+    right: 36px;
+    top: 30px;
+  }
+
+  &--toy {
+    right: 33px;
+    top: 32px;
+  }
+}
 }
 
 @media (min-width: $desktop-width) {
   .page-menu__list {
     padding: 0 $indents-desktop;
+    width: 1050px;
   }
 
   .page-menu__item {
-    width: 100%;
+    width: 525px;
+  }
+
+  .page-menu__link {
+    padding: 29px 350px 30px 36px;
   }
 }

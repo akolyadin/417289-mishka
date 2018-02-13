@@ -18,22 +18,15 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    padding: 0;
+    padding: 35px 0 40px;
     display: flex;
     max-width: $tablet-width;
+    justify-content: space-between;
   }
 
   .page-footer__logo {
     display: block;
-    margin: auto 0;
-    text-align: left;
     padding-left: $indents-tablet;
-  }
-
-  .page-footer__logo,
-  .page-footer__social,
-  .page-footer__copyright {
-    width: 34%;
   }
 
   .copyright {

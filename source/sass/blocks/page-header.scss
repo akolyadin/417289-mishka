@@ -1,8 +1,12 @@
 .page-header {
   margin: 0 auto;
   box-sizing: border-box;
+  max-width: $mobile-width;
 }
 
+.page-header__top {
+  position: relative;
+}
 .page-header__title {
   padding: 70px $indents 0;
   text-align: center;
@@ -37,10 +41,10 @@
 
   .page-header__offer {
     display: block;
-    bottom: 17px;
-    margin: 0;
-    padding-top: 61px;
+    margin: 0 auto;
+    padding-top: 18px;
     text-align: right;
+    @include font(15px, 24px);
   }
 
   .page-header__intro {
@@ -48,7 +52,7 @@
     margin-top: -53px;
 
     &--image {
-      min-height: 634px;
+      min-height: 625px;
       background-position: bottom;
     }
   }
@@ -79,12 +83,23 @@
 */
   .page-header__title {
     @include font-set($weight, 43px, 50px);
+    padding: 0px;
+    margin-top: 111px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     max-width: $desktop-width;
+  }
+
+/*Почему не отсекаются отступы по краям*/
+  .page-header__intro {
+    padding: 0 $indents-desktop;
+  }
+
+  .page-header__title {
+    @include font-set($weight, 53px, 57px);
   }
 
   .page-header__intro--image {

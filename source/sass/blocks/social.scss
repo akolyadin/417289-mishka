@@ -31,7 +31,7 @@
     fill: fade($color-blue-darker, 30%);
   }
 }
-
+/*
 .social__link--instagram {
   background-image: url("../img/icon-insta.svg");
 }
@@ -46,4 +46,18 @@
 
 .copyright__logo {
   background-image: url("../img/htmlacademy.svg")
+}*/
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-top: 14px;
+    margin-left: 100px;
+    align-items: center;
+  }
+
+  .social__item {
+    display: block;
+  }
 }
