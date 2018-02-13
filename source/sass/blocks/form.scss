@@ -1,20 +1,18 @@
-.form__wrapper {
+.form {
   margin: 0 auto;
   padding: 0 $indents;
-  outline: 1px solid black;
 }
 
 @media (min-width: $tablet-width) {
-  .form__wrapper {
+  .form {
     max-width: $tablet-width;
     padding: 0 $indents-tablet;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .form__wrapper {
+  .form {
     max-width: $desktop-width;
     padding: 0 $indents-desktop;
-    box-sizing: border-box;
   }
 }

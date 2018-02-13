@@ -27,6 +27,7 @@
   .page-footer__logo {
     display: block;
     padding-left: $indents-tablet;
+    padding-top: 15px;
   }
 
   .copyright {
@@ -38,8 +39,9 @@
 @media (min-width: $desktop-width) {
   /*Не понимаю почему тут задаю ширину через перемнную, а блок обрезанный*/
   .page-footer__wrapper {
-    max-width: $desktop-width;
-    min-height: 144px;
+    max-width: 1250px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .copyright {

@@ -1,11 +1,29 @@
 .prod-process__wrapper {
-  margin: 31px $indents 0;
+  margin-bottom: 60px;
   border: 1px solid $color-gray-light;
 }
 
+.prod-process__header {
+  position: relative;
+
+}
+.prod-process__icon-camera {
+  position: absolute;
+  top: 6px;
+  left: 34px;
+}
+
 .prod-process__title {
-  padding: 30px 0 30px 91px;
-  margin: 0;
+  margin-top: 24px;
+  margin-left: 60px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+
+  @include font-set($weight, 17px, 24px)
+}
+
+.prod-process__video {
+  height: 154px;
 }
 
 .prod-process__btn {
@@ -19,11 +37,14 @@
 
 .prod-process__description {
   margin: 0;
-  padding-bottom: 32px;
+  margin-bottom: 26px;
+  @include font(13px, 24px)
 }
 
 .prod-process__footer {
-  padding: 34px;
+  padding: 0 33px;
+  margin-top: 22px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -33,12 +54,11 @@
     flex-direction: column;
   }
 
-  .prod-process__preview {
+  .prod-process__video {
     order: 0;
   }
 
-  .prod-process__title {
-    padding: 39px 42px 0 108px;
+  .prod-process__header {
     order: 1;
   }
 
@@ -47,9 +67,7 @@
     padding: 46px 42px 0;
   }
 
-  .prod-process__video {
-    width: 100%;
-  }
+
 
   .prod-process__description {
     padding-bottom: 44px;

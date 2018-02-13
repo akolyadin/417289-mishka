@@ -24,66 +24,40 @@
   position: relative;
   margin-bottom: 23px;
 
-  @include font-set($weight, 17px, 20px)
+  @include font-set($weight, 17px, 20px);
 }
 
-.feature-item::before {
-  content: "";
-  display: block;
+.feature-icon {
   position: absolute;
-  background-repeat: no-repeat;
+  fill: $color-blue-lighter;
 }
 
-.feature-item--flower::before {
-  width: 33px;
-  height: 38px;
-  background-image: url("../img/icon-feature-flower.svg");
-  background-size: 33px 38px;
+.feature-icon--flower {
   left: 7px;
   top: 4px;
 }
 
-.feature-item--money::before {
-  width: 47px;
-  height: 27px;
-  background-image: url("../img/icon-feature-money.svg");
-  background-size: 47px 27px;
+.feature-icon--money {
   left: 0px;
   top: 6px;
 }
 
-.feature-item--heart::before {
-  width: 34px;
-  height: 27px;
-  background-image: url("../img/icon-feature-heart.svg");
-  background-size: 34px 27px;
+.feature-icon--heart {
   left: 7px;
   top: 11px;
 }
 
-.feature-item--ball::before {
-  width: 35px;
-  height: 34px;
-  background-image: url("../img/icon-feature-ball.svg");
-  background-size: 35px 34px;
+.feature-icon--ball {
   left: 3px;
   top: 8px;
 }
 
-.feature-item--rocket::before {
-  width: 55px;
-  height: 23px;
-  background-image: url("../img/icon-feature-rocket.svg");
-  background-size: 55px 23px;
+.feature-icon--rocket {
   left: -6px;
   top: 9px;
 }
 
-.feature-item--gift::before {
-  width: 33px;
-  height: 32px;
-  background-image: url("../img/icon-feature-gift.svg");
-  background-size: 33px 32px;
+.feature-icon--gift {
   left: 3px;
   top: 7px;
 }
@@ -92,7 +66,7 @@
   .features__wrapper {
     padding: 49px $indents-tablet 0;
     max-width: $tablet-width;
-    margin-bottom: 30px;
+    margin-bottom: 37px;
   }
 
   .features_title {

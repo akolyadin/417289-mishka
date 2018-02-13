@@ -3,36 +3,82 @@
   width: 100%;
 }
 
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $color-black;
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 28px;
+  padding-left: 75px;
+  position: relative;
+
+  @include font-set($weight, 17px, 24px);
+
+    &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+}
+
+.main-nav__icon {
+  fill: $color-gray-normal;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.main-nav__item--new,
+.main-nav__item--sale {
+  display: none;
+}
+
+.main-nav__item--home {
+  margin-top: 26px;
+  margin-bottom: 16px;
+
+  position: relative;
+  text-align: center;
+}
+
+.main-nav__link--home {
+  padding: 0;
+}
+
 .main-nav__toggle {
-  width: 86px;
-  height: 35px;
+  right: 25px;
+  top: 7px;
   position: absolute;
   background-color: transparent;
   background-size: 21px 20px;
   background-position: 0 0;
   background-repeat: no-repeat;
   border: none;
-  bottom: 21px;
-  right: -3px;
 }
 
-.main-nav__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+@media (max-width: 767px) {
+  .main-nav__item--closed {
+    display: none;
+  }
+
+  .main-nav__toggle--nojs {
+    display: none;
+  }
 }
 
-.main-nav__item {
-  padding: 0 $indents;
-  text-align: left;
-}
-
-.main-nav__item--home {
+.main-nav__link--home {
   text-align: center;
-  display: flex;
-  align-items: center;
-  padding-top: 22px 0 16px 116px;
 }
+
 
 .main-nav__logo-image {
   display: inline-block;
@@ -45,167 +91,135 @@
   }
 }
 
-.main-nav__item--new,
-.main-nav__item--sale {
-  display: none;
-}
-
-.main-nav__link {
-  display: block;
-  text-decoration: none;
-  color: $color-black;
-  padding: 26px 0 28px 75px;
-
-  @include font-set($weight, 17px, 24px);
-
-    &:hover {
-    color: fade($color-black, 60%);
-  }
-
-  &:active {
-    color: fade($color-black, 30%);
-  }
-}
 
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
     display: none;
   }
 
+  .main-nav__link--hidden {
+    display: none;
+  }
+
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 $indents-tablet;
+    margin: 0 $indents-tablet;
     margin-bottom: 6px;
-  }
-
-  .main-nav__item {
-    padding: 0;
-  }
-
-  .main-nav__link {
-    padding: 0;
   }
 
   .main-nav__item--home {
     order: 0;
+    width: 320px;
+  }
+
+  .main-nav__link--home {
     margin-right: auto;
     text-align: left;
-    width: 321px;
   }
 
-  .main-nav__item--search {
+   .main-nav__item--search {
     order: 1;
     width: 82px;
-    padding: 32px 0 10px;
-    position: relative;
-    /*Не совсем вырубаюсь. почему все улетает когда ставлю тут бордер?
-    border-left: 1px solid $color-gray-light*/
-  }
-
-  .main-nav__icon--search {
-    position: absolute;
-    top: 38px;
-    right: 30px;
-  }
-
-
-  .main-nav__link--hidden {
-    display: none;
+    border-left: 1px solid $color-gray-light
   }
 
   .main-nav__item--basket {
     order: 2;
     width: 264px;
     text-align: right;
-    padding: 34px 0 33px;
     border-left: 1px solid $color-gray-light;
-    position: relative;
-  }
-
-   .main-nav__icon--basket {
-    position: absolute;
-    top: 0;
-    left: 32px;
-  }
-
-  .main-nav__item--catalog,
-  .main-nav__item--form,
-  .main-nav__item--new,
-  .main-nav__item--sale {
-    text-align: left;
   }
 
   .main-nav__item--catalog {
-    margin-top: 19px;
-    padding: 0px 18px 0 0;
     order: 3;
-    font-size: 15px;
   }
 
   .main-nav__item--form {
-    padding: 18px 0 0 0;
     order: 4;
+  }
+
+  .main-nav__link--catalog,
+  .main-nav__link--form{
+    padding-top: 17px;
+    padding-left: 0;
+    padding-left: 0;
+    width: 167px;
     font-size: 15px;
   }
+
+
+
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
-    padding: 0 $indents-desktop;
     margin-bottom: 0px;
   }
 
   .main-nav__item--home {
     order: 2;
-    width: 0;
-    padding: 0;
+    width: 295px;
+  }
+
+  .main-nav__link--home {
+    text-align: center;
   }
 
   .main-nav__item--search {
     order: 3;
-    width: 83px;
-  }
-
-  .main-nav__icon--search {
-    position: absolute;
-    top: 22px;
-    right: 32px;
   }
 
   .main-nav__item--basket {
     order: 4;
-    width: 267px;
-    text-align: right;
     padding-top: 15px;
-    margin-bottom: 30px;
-  }
-
-  .main-nav__icon--basket {
-    position: absolute;
-    top: -6px;
-    left: 31px;
+    padding-bottom: 8px;
   }
 
   .main-nav__item--catalog {
-    padding-right: 0;
-    margin-top: 15px;
-    width: 184px;
     order: 0;
+    padding-top: 22px;
+    padding-bottom: 8px;
+    border-right: 1px solid $color-gray-light;
+  }
+
+  .main-nav__link--catalog,
+  .main-nav__link--form {
+    width: 185px;
+    font-size: 17px;
+  }
+
+  .main-nav__link--form {
+    margin-left: 34px;
   }
 
   .main-nav__item--form {
-    padding-left: 36px;
     order: 1;
+    padding-top: 22px;
+    padding-bottom: 8px;
   }
 
   .main-nav__item--new {
     order: 5;
-    width: 184px;
+  }
+
+  .main-nav__item--new {
+    order: 5;
+  }
+
+  .main-nav__link--new,
+  .main-nav__link--sale{
+    width: 185px;
+    font-size: 15px;
+    padding-left: 0;
+    padding-top: 12px;
+  }
+
+  .main-nav__link--sale {
+    margin-left: 34px;
   }
 
   .main-nav__item--sale {
-    padding-left: 36px;
     order: 6;
   }
 

@@ -1,10 +1,15 @@
 .catalog-list__wrapper {
-  padding: 0 $indents;
+  margin-top: 28px;
+  max-width: $mobile-width;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-list__wrapper {
-    padding: 80px $indents-tablet 0;
+    margin-top: 125px;
+    max-width: $tablet-width;
+    padding: 0 $indents-tablet;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 

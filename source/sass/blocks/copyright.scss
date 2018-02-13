@@ -11,6 +11,23 @@
   text-decoration: none;
 
   @include font-set($weight, 19px, 18px)
+
+  &:hover {
+    .copyright__icon {
+      fill: $color-blue-darker;
+    }
+  }
+
+  &:active {
+    color: fade($color-black, 30%);
+
+    .copyright__icon {
+     opacity: 0.3;
+    }
+    .copyright__text {
+      opacity: 0.3;
+  }
+}
 }
 
 .copyright__text {
@@ -22,5 +39,11 @@
 @media (min-width: $tablet-width) {
   .copyright {
     padding-top: 0px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    padding-right: 60px;
   }
 }

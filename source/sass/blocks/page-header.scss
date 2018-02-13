@@ -42,19 +42,23 @@
   .page-header__offer {
     display: block;
     margin: 0 auto;
-    padding-top: 18px;
+    padding-top: 16px;
     text-align: right;
     @include font(15px, 24px);
   }
 
   .page-header__intro {
     padding: 0 $indents-tablet;
-    margin-top: -53px;
+    margin-top: -80px;
 
     &--image {
       min-height: 625px;
       background-position: bottom;
     }
+  }
+
+  .page-header__intro--image {
+    background-size: cover;
   }
 /*
   .page-header::before {
@@ -86,6 +90,10 @@
     padding: 0px;
     margin-top: 111px;
   }
+
+  .page-header__title--no-image {
+    margin-top: 50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -94,16 +102,28 @@
   }
 
 /*Почему не отсекаются отступы по краям*/
-  .page-header__intro {
-    padding: 0 $indents-desktop;
-  }
 
   .page-header__title {
     @include font-set($weight, 53px, 57px);
+
+  }
+
+  .page-header__offer {
+    padding-top: 30px;
   }
 
   .page-header__intro--image {
     padding: 0;
     background-position: bottom;
+  }
+
+  .page-header__intro {
+    padding: 0 $indents-tablet;
+    margin-top: -80px;
+
+    &--image {
+      min-height: 637px;
+      background-position: bottom;
+    }
   }
 }
