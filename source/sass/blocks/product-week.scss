@@ -68,12 +68,11 @@
 }
 
 .product-week__btn {
-    display: block;
-    margin-top: 26px;
-  }
+  display: block;
+  margin-top: 26px;
+}
 
 @media (min-width: $tablet-width) {
-
   .product-week__wrapper {
     padding: 46px $indents-tablet 0;
     position: relative;
@@ -164,9 +163,10 @@
   }
 
   .product-week__title {
-    @include font(53px, 57px)
     z-index: 2;
     margin-bottom: 16px;
+
+    @include font(53px, 57px);
   }
 
   .product-week__mark {

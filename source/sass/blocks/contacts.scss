@@ -127,6 +127,10 @@
 
   .contacts__inner {
     flex-direction: column;
+    width: 350px;
+    padding: 0;
+    margin-bottom: 62px;
+    margin-left: 30px;
   }
 
   .contact__title {
@@ -140,14 +144,6 @@
     top: -9px;
   }
 
-  .contacts__inner {
-    width: 350px;
-    padding: 0;
-    margin-bottom: 62px;
-    margin-left: 30px;
-
-  }
-
   .contacts__item {
     padding-top: 49px;
   }
@@ -155,5 +151,4 @@
   .contacts__btn {
     margin: 30px;
   }
-
 }

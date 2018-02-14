@@ -5,8 +5,8 @@
 
 .prod-process__header {
   position: relative;
-
 }
+
 .prod-process__icon-camera {
   position: absolute;
   top: 6px;
@@ -19,7 +19,7 @@
   margin-bottom: 25px;
   padding-left: 10px;
 
-  @include font-set($weight, 17px, 24px)
+  @include font-set($weight, 17px, 24px);
 }
 
 .prod-process__video {
@@ -93,7 +93,6 @@
   }
 
   .prod-process__header {
-    padding: 0;
     margin-top: 43px;
     padding: 30px 70px;
     width: 368px;

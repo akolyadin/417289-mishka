@@ -10,7 +10,6 @@
 
   @include font-set(bold, 17px, 20px);
 
-
   &:hover {
     color: #ffffff;
     background-color: #444444;
@@ -21,6 +20,5 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     transition: all 0.2s;
-}
-
+  }
 }

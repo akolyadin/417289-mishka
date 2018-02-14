@@ -1,6 +1,6 @@
 .order-form__text {
   width: 260px;
-  color:$color-gray-dark;
+  color: $color-gray-dark;
   line-height: 25px;
   padding-top: 20px;
   margin: auto;
@@ -36,11 +36,11 @@
   @include font-set($weight, 17px, 16px);
 
   &--phone {
-    margin-bottom: 9px
+    margin-bottom: 9px;
   }
 
   &--email {
-    margin-bottom: 9px
+    margin-bottom: 9px;
   }
 }
 
@@ -81,20 +81,12 @@
   @include font(16px, 18px);
 }
 
-
-
 .order-form__row--check {
   padding-bottom: 21px;
 
   &:last-child {
     padding-bottom: 0;
   }
-}
-
-.order-form__input-text--comment {
-  color: #444444;
-
-  @include font(16px, 30px);
 }
 
 .order-form__label {
@@ -192,7 +184,7 @@
 
   &:hover {
     border-bottom: 2px solid $color-blue-lighter;
-    outline: none
+    outline: none;
   }
 
   &:active {
@@ -223,6 +215,9 @@
   margin: 0;
   display: block;
   border: 2px solid $color-gray-dark;
+  color: #444444;
+
+  @include font(16px, 30px);
 
   &:hover {
       border: 2px solid $color-blue-lighter;
@@ -236,20 +231,20 @@
   }
 }
 
-  .order-form__footer {
-    margin: 0 30px;
-  }
+.order-form__footer {
+  margin: 0 30px;
+}
 
-  .order-form__btn {
-    display: block;
-    margin-top: 23px;
-    margin-bottom: 58px;
-    width: 100%;
-  }
+.order-form__btn {
+  display: block;
+  margin-top: 23px;
+  margin-bottom: 58px;
+  width: 100%;
+ }
 
-  .order-form__required {
-    @include font(14px, 16px)
-  }
+.order-form__required {
+  @include font(14px, 16px);
+}
 
 @media (min-width: $tablet-width) {
   .order-form__text {
@@ -286,12 +281,11 @@
       margin-right: 0;
       width: 718px;
     }
-
   }
 
   .order-form__title {
     width: 166px;
-    margin: 0px;
+    margin: 0;
     margin-top: 19px;
 
 
@@ -417,11 +411,10 @@
     order: 1;
     margin-top: 43px;
     margin-left: auto;
-    @include font(17px, 30px)
+
+    @include font(17px, 30px);
   }
 }
-
-
 
 @media (min-width: $desktop-width) {
   .order-form__text {
@@ -451,7 +444,7 @@
     width: 800px;
   }
 
-  .order-form__row--text{
+  .order-form__row--text {
     width: 700px;
   }
 

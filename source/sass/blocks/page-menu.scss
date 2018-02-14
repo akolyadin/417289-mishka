@@ -32,10 +32,9 @@
     color: fade($color-white, 30%);
   }
 
-.page-menu__icon {
-  position: absolute;
-
-  opacity: 0.5;
+  .page-menu__icon {
+    position: absolute;
+    opacity: 0.5;
 
     &--interior {
       right: 36px;
@@ -71,17 +70,17 @@
   }
 
 
-.page-menu__icon {
-  &--interior {
-    right: 36px;
-    top: 30px;
-  }
+  .page-menu__icon {
+    &--interior {
+      right: 36px;
+      top: 30px;
+    }
 
-  &--toy {
-    right: 33px;
-    top: 32px;
+    &--toy {
+      right: 33px;
+      top: 32px;
+    }
   }
-}
 }
 
 @media (min-width: $desktop-width) {

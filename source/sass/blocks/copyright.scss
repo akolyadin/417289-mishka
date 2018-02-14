@@ -1,5 +1,5 @@
 .copyright {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .copyright__link {
@@ -10,7 +10,7 @@
   justify-content: center;
   text-decoration: none;
 
-  @include font-set($weight, 19px, 18px)
+  @include font-set($weight, 19px, 18px);
 
   &:hover {
     .copyright__icon {
@@ -39,7 +39,7 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
-    padding-top: 0px;
+    padding-top: 0;
   }
 }
 

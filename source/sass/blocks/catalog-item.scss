@@ -16,7 +16,7 @@
 .catalog-item__title {
   margin: 0;
 
-  @include font(17px, 24px)
+  @include font(17px, 24px);
 }
 
 .catalog-item__parameters {
@@ -53,7 +53,7 @@
 .catalog-item__icon--basket {
   position: absolute;
   top: -2px;
-  right: 0px;
+  right: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -97,14 +97,9 @@
     padding: 0;
   }
 
-  .catalog-item__icon--basket {
-
-  }
-
   .catalog-item__price {
-
     @include font(17px, 24px);
-}
+  }
 }
 
 
@@ -128,12 +123,11 @@
   }
 
   .catalog-item__parameters {
-    padding-bottom: 0px;
+    padding-bottom: 0;
     margin-bottom: 38px;
   }
 
   .catalog-item__footer {
     margin-bottom: 10px;
   }
-
 }

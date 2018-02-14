@@ -7,6 +7,7 @@
 .page-header__top {
   position: relative;
 }
+
 .page-header__title {
   padding: 70px $indents 0;
   text-align: center;
@@ -41,45 +42,18 @@
     &--image {
       min-height: 629px;
       background-position: bottom;
+      background-size: cover;
     }
   }
 
-  .page-header__intro--image {
-    background-size: cover;
-  }
-/*
-  .page-header::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-repeat: repeat;
-    height: 10px;
-    background-size: 20px 20px;
-    background-image: radial-gradient(circle at 10px -5px, transparent 12px, $color-white 13px);
-  }
-
-  .page-header::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-repeat: repeat;
-    height: 15px;
-    background-size: 40px 20px;
-    background-image: radial-gradient(circle at 10px 15px, $color-white 12px, transparent 13px);
-  }
-*/
   .page-header__title {
     @include font-set($weight, 43px, 50px);
-    padding: 0px;
+    padding: 0;
     padding-top: 156px;
   }
 
   .page-header__title--no-image {
-    margin-top: 0px;
+    margin-top: 0;
     padding-top: 95px;
   }
 }
@@ -89,14 +63,12 @@
     max-width: $desktop-width;
   }
 
-/*Почему не отсекаются отступы по краям*/
-
   .page-header__title {
     @include font-set($weight, 53px, 57px);
   }
 
   .page-header__title--no-image {
-    margin-top: 0px;
+    margin-top: 0;
     padding-top: 95px;
     padding-bottom: 108px;
   }
@@ -105,16 +77,12 @@
     padding-top: 30px;
   }
 
-  .page-header__intro--image {
-    padding: 0;
-    background-position: bottom;
-  }
-
   .page-header__intro {
     padding: 0 $indents-tablet;
     margin-top: -42px;
 
     &--image {
+      padding: 0;
       min-height: 626px;
       background-position: bottom;
     }

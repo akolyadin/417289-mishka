@@ -37,26 +37,11 @@
   &:hover {
     fill: $color-blue-darker;
   }
+
   &:active {
     fill: fade($color-blue-darker, 30%);
   }
 }
-/*
-.social__link--instagram {
-  background-image: url("../img/icon-insta.svg");
-}
-
-.social__link--facebook {
-  background-image: url("../img/icon-fb.svg");
-}
-
-.social__link--tweeter {
-  background-image: url("../img/icon-twitter.svg");
-}
-
-.copyright__logo {
-  background-image: url("../img/htmlacademy.svg")
-}*/
 
 @media (min-width: $tablet-width) {
   .social__list {

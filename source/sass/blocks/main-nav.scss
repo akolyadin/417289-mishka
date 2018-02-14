@@ -56,6 +56,7 @@
 
 .main-nav__link--home {
   padding: 0;
+  text-align: center;
 }
 
 .main-nav__toggle {
@@ -83,12 +84,9 @@
   }
 }
 
-.main-nav__link--home {
-  text-align: center;
-}
-
 .main-nav__logo-image {
   display: inline-block;
+
   &:hover {
     opacity: 0.6;
   }
@@ -97,7 +95,6 @@
     opacity: 0.3;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
@@ -150,7 +147,7 @@
   .main-nav__link--form {
     padding-top: 17px;
     padding-left: 0;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     width: 167px;
     font-size: 15px;
   }
@@ -175,6 +172,7 @@
 
   .sec-nav__text {
     margin: 0;
+
     @include font-set(100, 15px, 24px);
   }
 }
