@@ -125,7 +125,7 @@
     text-align: left;
   }
 
-   .main-nav__item--search {
+  .main-nav__item--search {
     order: 1;
     width: 82px;
     border-left: 1px solid $color-gray-light;
@@ -180,10 +180,10 @@
 }
 
 @media (min-width: $desktop-width) {
-   .main-nav__link {
+  .main-nav__link {
     margin-top: 25px;
     padding-top: 0;
-   }
+  }
 
   .main-nav__list {
     margin-bottom: 41px;

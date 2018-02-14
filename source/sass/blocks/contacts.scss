@@ -107,7 +107,8 @@
 
   .contact__text {
     width: 255px;
-     @include font(17px, 30px);
+
+    @include font(17px, 30px);
   }
 
   .contacts__btn {
