@@ -37,7 +37,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  /*Не понимаю почему тут задаю ширину через перемнную, а блок обрезанный*/
   .page-footer__wrapper {
     max-width: 1150px;
   }
