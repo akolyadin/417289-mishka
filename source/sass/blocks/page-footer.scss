@@ -1,8 +1,11 @@
+.page-footer {
+  background-color: $color-gray-light;
+}
+
 .page-footer__wrapper {
   padding: 13px 0 20px;
-  margin: 0 auto;
   background-color: $color-gray-light;
-  max-width: $mobile-width;
+
 }
 
 .page-footer__logo {
