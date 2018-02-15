@@ -204,7 +204,7 @@
 
 .order-form__input-text--comment {
   width: 97%;
-  padding-bottom: 87px;
+  padding-bottom: 65px;
   margin: 0;
   display: block;
   border: 2px solid $color-gray-dark;
@@ -389,7 +389,7 @@
 
   .order-form__input-text--comment {
     width: 501px;
-    padding-bottom: 95px;
+    padding-bottom: 75px;
   }
 
   .order-form__footer {
@@ -463,7 +463,7 @@
 
   .order-form__input-text--comment {
     width: 693px;
-    padding-bottom: 100px;
+    padding-bottom: 77px;
   }
 
   .order-form__footer {
@@ -474,5 +474,9 @@
   .order-form__btn {
     margin-top: 30px;
     margin-bottom: 47px;
+  }
+
+  .order-form__required {
+    margin-top: 39px;
   }
 }

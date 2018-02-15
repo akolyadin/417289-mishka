@@ -6,13 +6,11 @@
 
 .contact__title {
   margin: 0 0 10px;
-  padding: 0 $indents;
 
   @include font-set($weight, 18px, 30px);
 }
 
 .contacts__inner {
-  padding: 0 $indents;
   margin: 0 0 22px;
 }
 
@@ -55,7 +53,6 @@
 }
 
 .contacts__btn {
-  margin: 0 $indents;
   display: block;
   text-align: center;
 }
