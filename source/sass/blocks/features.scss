@@ -20,6 +20,7 @@
 
 .feature-item {
   margin-bottom: 30px;
+
   @include font-set($weight, 17px, 20px);
 
   &--money {

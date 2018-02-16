@@ -1,8 +1,9 @@
 .main-nav {
   width: 260px;
   margin: 0 auto;
-  @include font-set($weight, 17px, 24px);
   position: relative;
+
+  @include font-set($weight, 17px, 24px);
 }
 
 .main-nav__list {

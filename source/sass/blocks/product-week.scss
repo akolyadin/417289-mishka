@@ -6,7 +6,6 @@
 }
 
 .product-week__table {
-  width: 100%;
   border-collapse: collapse;
   width: 260px;
   margin: 0 auto;
@@ -79,7 +78,6 @@
   display: block;
   margin: 26px auto 70px;
   width: 260px;
-
 }
 
 @media (min-width: $tablet-width) {
@@ -126,8 +124,8 @@
   }
 
   .product-week__table {
-    margin-bottom: 40px;
     margin: 0;
+    margin-bottom: 40px;
 
     @include font(15px, 20px);
   }
@@ -164,7 +162,7 @@
 
   .product-week__btn {
     margin: 34px 43px 0 0;
-    width: 287px
+    width: 287px;
   }
 }
 
@@ -202,7 +200,6 @@
     padding: 5px 60px 0 0;
     width: 350px;
     margin-left: 175px;
-
   }
 
   .product-week__text {

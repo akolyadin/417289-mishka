@@ -25,7 +25,7 @@
   padding: 36px 30px 46px;
   box-sizing: border-box;
   background-color: white;
-  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
 
@@ -60,16 +60,17 @@
 }
 
 .modal__input-radio {
-  display: none
+  display: none;
 }
 
-.modal__input-radio:checked  {
+.modal__input-radio:checked {
   border-color: $color-gray-light;
 }
 
 .modal__label-radio {
   color: $color-gray-dark;
-  @include font-set($weight, 17px, 16px)
+
+  @include font-set($weight, 17px, 16px);
 
   cursor: pointer;
   text-align: center;
@@ -106,25 +107,6 @@
     color: fade($color-white, 30%);
   }
 }
-/*
-.add-to-cart__label-wrapper {
-
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  margin-bottom: 32px;
-
-  p {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-
-
-
-*/
 
 @media (min-width: $tablet-width) {
   .modal {
