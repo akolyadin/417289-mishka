@@ -1,5 +1,7 @@
 .reviews__wrapper {
   padding: 24px 0 45px;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .reviews__title {
@@ -70,26 +72,28 @@
 
 @media (min-width: $tablet-width) {
   .reviews__wrapper {
-    padding: 72px $indents-tablet 102px;
+    padding: 72px 0 102px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px auto;
     background-position: left top;
-    max-width: $tablet-width;
+    width: $tablet-width;
     position: relative;
   }
 
   .reviews__title {
-    margin-left: -4px;
-    margin-bottom: 49px;
     order: 0;
+    width: 668px;
+    margin-left: 50px;
+    margin-bottom: 49px;
 
     @include font(43px, 50px);
   }
 
   .review__text {
+    margin: 0 auto;
+    width: 668px;
     margin-bottom: 54px;
-
     @include font(17px, 30px);
   }
 
@@ -102,6 +106,7 @@
 
   .review__author {
     font-size: 18px;
+    margin-left: $indents-tablet;
   }
 
   .reviews__toggles {

@@ -1,13 +1,10 @@
 .catalog-list__wrapper {
   margin-top: 28px;
-  max-width: $mobile-width;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-list__wrapper {
     margin-top: 125px;
-    max-width: $tablet-width;
-    padding: 0 $indents-tablet;
     display: flex;
     flex-wrap: wrap;
   }
@@ -15,8 +12,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog-list__wrapper {
-    max-width: $desktop-width;
     justify-content: space-between;
-    margin-bottom: 56px;
+    width: 1050px;
+    margin: 125px auto 56px;
   }
 }

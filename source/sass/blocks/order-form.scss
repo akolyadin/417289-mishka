@@ -56,8 +56,7 @@
 
 .order-form__wrapper {
   width: 260px;
-  margin: 0 30px;
-  position: relative;
+  margin: 0 auto;
 }
 
 .order-form__group {
@@ -195,11 +194,15 @@
   }
 }
 
+.input-text__wrapper {
+  position: relative;
+}
+
 .order-form__icon-email,
 .order-form__icon-phone {
   position: absolute;
   right: 4px;
-  top: 35px;
+  top: 1px;
 }
 
 .order-form__input-text--comment {
@@ -225,7 +228,8 @@
 }
 
 .order-form__footer {
-  margin: 0 30px;
+  margin: 0 auto;
+  width: 260px;
 }
 
 .order-form__btn {
@@ -394,6 +398,7 @@
 
   .order-form__footer {
     display: flex;
+    width: 668px;
     margin: 0 50px;
   }
 
@@ -457,7 +462,7 @@
   .order-form__icon-email,
   .order-form__icon-phone {
     position: absolute;
-    right: 180px;
+    right: 40px;
     top: 9px;
   }
 
@@ -469,6 +474,7 @@
   .order-form__footer {
     display: flex;
     margin: 0 225px;
+    width: 700px;
   }
 
   .order-form__btn {

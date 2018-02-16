@@ -1,6 +1,8 @@
 .prod-process__wrapper {
+  margin: 0 auto;
   margin-bottom: 60px;
   border: 1px solid $color-gray-light;
+  width: 260px;
 }
 
 .prod-process__header {
@@ -50,7 +52,7 @@
 
 @media (min-width: $tablet-width) {
   .prod-process__wrapper {
-    margin: 50px $indents-tablet 63px;
+    width: 668px;
     display: flex;
     flex-direction: column;
   }
@@ -79,7 +81,7 @@
 
 @media (min-width: $desktop-width) {
   .prod-process__wrapper {
-    margin: 0 $indents-desktop 105px;
+    width: 1050px;
     align-items: flex-end;
     position: relative;
   }

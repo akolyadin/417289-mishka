@@ -1,12 +1,13 @@
 .features__wrapper {
-  max-width: $mobile-width;
+  width: 260px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
 
 .features_title {
   padding: 0;
-  margin: 28px 0;
+  margin-top: 28px;
+  margin-bottom: 32px;
 
   @include font-set($weight, 25px, 30px);
 }
@@ -18,52 +19,59 @@
 }
 
 .feature-item {
-  padding-top: 60px;
-  position: relative;
-  margin-bottom: 23px;
-
+  margin-bottom: 30px;
   @include font-set($weight, 17px, 20px);
+
+  &--money {
+    margin-bottom: 35px;
+  }
+
+  &--heart {
+   margin-bottom: 32px;
+  }
+
+  &--ball {
+   margin-bottom: 33px;
+  }
 }
 
 .feature-icon {
-  position: absolute;
+  display: block;
   fill: $color-blue-lighter;
+  margin-bottom: 17px;
 }
 
 .feature-icon--flower {
-  left: 7px;
-  top: 4px;
+  padding-left: 10px;
 }
 
 .feature-icon--money {
-  left: 0;
-  top: 6px;
+  margin-bottom: 25px;
 }
 
 .feature-icon--heart {
-  left: 7px;
-  top: 11px;
+  padding-left: 8px;
+  margin-bottom: 21px;
 }
 
 .feature-icon--ball {
-  left: 3px;
-  top: 8px;
+  padding-left: 5px;
+  margin-bottom: 16px;
 }
 
 .feature-icon--rocket {
-  left: -6px;
-  top: 9px;
+  margin-left: -5px;
+  margin-bottom: 27px;
 }
 
 .feature-icon--gift {
-  left: 3px;
-  top: 7px;
+  padding-left: 5px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .features__wrapper {
-    padding: 49px $indents-tablet 0;
-    max-width: $tablet-width;
+    width: 668px;
     margin-bottom: 35px;
   }
 

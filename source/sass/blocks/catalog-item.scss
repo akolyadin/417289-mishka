@@ -3,11 +3,9 @@
   text-decoration: none;
 }
 
-.catalog-list__wrapper {
-  text-align: center;
-}
-
 .catalog-item {
+  width: 260px;
+  margin: 0 auto;
   margin-bottom: 30px;
   text-align: left;
   border: 1px solid $color-gray-light;
@@ -41,6 +39,8 @@
   margin-top: 20px;
   margin-bottom: 22px;
   position: relative;
+  display: flex;
+  justify-content: space-between
 }
 
 .catalog-item__price {
@@ -51,7 +51,6 @@
 }
 
 .catalog-item__icon--basket {
-  position: absolute;
   top: -2px;
   right: 0;
 }
@@ -61,6 +60,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    width: 668px;
     margin-bottom: 56px;
   }
 
@@ -111,13 +111,18 @@
 
   .catalog-item__description {
     padding: 0;
+    display: flex;
+    flex-direction: column;
     margin-top: 15px;
+  }
+
+  .catalog-item__header {
+    flex-grow: 1;
   }
 
   .catalog-item__image {
     width: 332px;
     height: 460px;
-    outline: 1px solid red;
   }
 
   .catalog-item__parameters {

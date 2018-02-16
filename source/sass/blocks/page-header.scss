@@ -1,18 +1,14 @@
-.page-header__top {
-  position: relative;
-  margin: 0 auto;
-}
-
 .page-header__title {
-  max-width: $mobile-width;
-  text-align: center;
+  width: 260px;
   margin: 0 auto;
+  padding-top: 70px;
+  text-align: center;
 
   @include font-set($weight, 27px, 30px);
 }
 
 .page-header__intro {
-  background-color: $color-gray-light;
+  background-color: #fbfbfb;
   min-height: 177px;
   z-index: -1;
 
@@ -25,17 +21,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    padding: 0;
-  }
-
   .page-header__intro {
-    padding: 0 $indents-tablet;
     margin-top: -43px;
 
     &--image {
       min-height: 629px;
-      background-position: bottom;
       background-size: cover;
     }
   }
@@ -44,6 +34,7 @@
     @include font-set($weight, 43px, 50px);
     padding: 0;
     padding-top: 156px;
+    width: $tablet-width;
   }
 
   .page-header__title--no-image {
@@ -54,16 +45,15 @@
 
 @media (min-width: $desktop-width) {
   .page-header__title {
-    max-width: $desktop-width;
+    width: $desktop-width;
+    margin: 0 auto;
 
     @include font-set($weight, 53px, 57px);
   }
 
   .page-header__title--no-image {
-    margin-top: 0;
     padding-top: 95px;
     padding-bottom: 108px;
-    max-width: $tablet-width;
   }
 
   .page-header__offer {
@@ -71,7 +61,6 @@
   }
 
   .page-header__intro {
-    padding: 0 $indents-tablet;
     margin-top: -42px;
 
     &--image {

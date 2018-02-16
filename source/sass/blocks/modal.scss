@@ -1,10 +1,9 @@
 .modal__overlay {
   display: none;
-
 }
 
 .modal__overlay--show {
-  display: block;
+   display: block;
   background-color: $color-gray-light;
   opacity: 0.6;
   position: fixed;
@@ -26,6 +25,8 @@
   padding: 36px 30px 46px;
   box-sizing: border-box;
   background-color: white;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+  z-index: 10;
 }
 
 .modal__show {
@@ -58,10 +59,72 @@
   @include font(15px, 30px);
 }
 
-.modal__btn {
-  min-height: 52px;
-  width: 260px;
+.modal__input-radio {
+  display: none
 }
+
+.modal__input-radio:checked  {
+  border-color: $color-gray-light;
+}
+
+.modal__label-radio {
+  color: $color-gray-dark;
+  @include font-set($weight, 17px, 16px)
+
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  width: 78px;
+  margin: 2px;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 2px solid $color-gray-normal;
+
+  &:hover {
+    border-color: $color-gray-light;
+  }
+}
+
+.modal__input-radio:checked + .modal__label-radio {
+  border-color: $color-blue-lighter;
+}
+
+.modal__btn {
+  width: 100%;
+  padding: 16px 0;
+  background-color: $color-blue-lighter;
+  border-color: $color-blue-lighter;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-blue;
+    border-color: $color-blue;
+  }
+
+  &:active {
+    color: fade($color-white, 30%);
+  }
+}
+/*
+.add-to-cart__label-wrapper {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-bottom: 32px;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+
+
+*/
 
 @media (min-width: $tablet-width) {
   .modal {
