@@ -1,55 +1,149 @@
 .features__wrapper {
-  padding: 0 $indents;
-  outline: 1px solid green;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .features_title {
-  margin: 0;
-  padding: 36px 0 31px;
+  padding: 0;
+  margin-top: 28px;
+  margin-bottom: 32px;
 
-  @include font(25px, 30px);
-  outline: 1px solid yellow;
+  @include font-set($weight, 25px, 30px);
 }
 
 .features__list {
+  list-style: none;
   padding: 0;
   margin: 0;
-  outline: 1px solid red;
 }
 
 .feature-item {
-  list-style-type: none;
-  font-weight: $weight;
-  outline: 1px solid orange;
+  margin-bottom: 30px;
+
+  @include font-set($weight, 17px, 20px);
+
+  &--money {
+    margin-bottom: 35px;
+  }
+
+  &--heart {
+    margin-bottom: 32px;
+  }
+
+  &--ball {
+    margin-bottom: 33px;
+  }
+}
+
+.feature-icon {
+  display: block;
+  fill: $color-blue-lighter;
+  margin-bottom: 17px;
+}
+
+.feature-icon--flower {
+  padding-left: 10px;
+}
+
+.feature-icon--money {
+  margin-bottom: 25px;
+}
+
+.feature-icon--heart {
+  padding-left: 8px;
+  margin-bottom: 21px;
+}
+
+.feature-icon--ball {
+  padding-left: 5px;
+  margin-bottom: 16px;
+}
+
+.feature-icon--rocket {
+  margin-left: -5px;
+  margin-bottom: 27px;
+}
+
+.feature-icon--gift {
+  padding-left: 5px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .features__wrapper {
-    padding: 0 $indents-tablet 87px;
+    width: 668px;
+    margin-bottom: 25px;
+    padding-top: 20px;
   }
 
   .features_title {
-    font-size: $size-h2-table;
+    margin-left: -5px;
+    margin-bottom: 47px;
+
+    @include font(43px, 50px);
   }
 
   .features__list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
   }
 
   .feature-item {
-    width: 50%;
+    width: 300px;
+    margin-right: 34px;
+    margin-bottom: 60px;
+
+    @include font(20px, 22px);
+  }
+
+  .feature-item--flower {
+    order: 0;
+  }
+
+  .feature-item--money {
+    order: 2;
+  }
+
+  .feature-item--heart {
+    order: 4;
+  }
+
+  .feature-item--ball {
+    order: 1;
+  }
+
+  .feature-item--rocket {
+    order: 3;
+  }
+
+  .feature-item--gift {
+    order: 5;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features__wrapper {
-    padding: 0 $indents-desktop;
+    width: 700px;
   }
 
   .feature-item {
-    width: 350px;
+    width: 315px;
+  }
+
+  .features_title {
+    margin-top: 40px;
+    margin-bottom: 49px;
+
+    @include font(53px, 57px);
+  }
+
+  .feature-icon--ball {
+    margin-bottom: 20px;
+  }
+
+  .feature-icon--gift {
+    margin-bottom: 18px;
   }
 
   .feature-item--eco {

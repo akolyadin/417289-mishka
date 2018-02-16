@@ -1,31 +1,134 @@
 .prod-process__wrapper {
-  margin: 31px $indents 0;
+  margin: 0 auto;
+  margin-bottom: 60px;
   border: 1px solid $color-gray-light;
+  width: 260px;
+}
+
+.prod-process__header {
+  position: relative;
+}
+
+.prod-process__icon-camera {
+  position: absolute;
+  top: 6px;
+  left: 34px;
+}
+
+.prod-process__title {
+  margin-top: 24px;
+  margin-left: 80px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+
+  @include font-set($weight, 17px, 24px);
+}
+
+.prod-process__video {
+  height: 154px;
 }
 
 .prod-process__btn {
   text-align: center;
+  display: block;
+}
+
+.prod-process__play-btn {
+  position: absolute;
+}
+
+.prod-process__description {
+  margin: 0;
+  margin-bottom: 25px;
+  padding-right: 10px;
+
+  @include font(13px, 24px);
 }
 
 .prod-process__footer {
-  padding: 0 34px;
+  padding: 0 33px;
+  margin-top: 23px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
-  .prod-process {
-    padding-top: 51px;
-  }
-
-  .prod-process__title {
-    padding: 39px 42px 0;
+  .prod-process__wrapper {
+    width: 668px;
+    display: flex;
+    flex-direction: column;
   }
 
   .prod-process__video {
-    order: -1;
-    width: 100%;
+    order: 0;
+  }
+
+  .prod-process__header {
+    order: 1;
   }
 
   .prod-process__footer {
-    padding: 0 42px;
+    order: 2;
+    padding: 46px 42px 0;
+  }
+
+  .prod-process__description {
+    padding-bottom: 44px;
+  }
+
+  .prod-process__btn {
+    margin-bottom: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .prod-process__wrapper {
+    width: 1050px;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .prod-process__video {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .prod-process__header {
+    margin-top: 43px;
+    padding: 30px 70px;
+    width: 368px;
+    box-sizing: border-box;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  .prod-process__title {
+    margin-left: 0;
+    margin-bottom: 0;
+
+    @include font(20px, 24px);
+  }
+
+  .prod-process__footer {
+    width: 350px;
+    padding: 0;
+  }
+
+  .prod-process__description {
+    padding: 0 60px 0;
+
+    @include font(15px, 30px);
+  }
+
+  .prod-process__btn {
+    margin: 45px 63px 30px;
+  }
+
+  .prod-process__icon-camera {
+    position: absolute;
+    top: 0;
+    left: 81px;
   }
 }

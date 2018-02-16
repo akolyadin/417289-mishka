@@ -1,20 +1,21 @@
 .map {
-  padding: 43px 0 39px;
-  text-align: center;
+  display: block;
+  margin-bottom: 29px;
 }
 
 @media (min-width: $tablet-width) {
   .map {
-    padding: 61px 0 55px;
+    margin-bottom: 44px;
   }
 }
 
-/*С какртой какие то таблы*/
 @media (min-width: $desktop-width) {
   .map {
-    padding: 0;
     position: absolute;
-    left: 625px;
-    top: -1px;
+    left: 525px;
+    top: 71px;
+    z-index: -1;
+    width: 525px;
+    height: 457px;
   }
 }

@@ -1,24 +1,16 @@
-.page-header {
-  margin: 0 auto;
-  box-sizing: border-box;
-  outline: 1px solid black;
-}
-
 .page-header__title {
-  padding: 74px $indents 0;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 70px;
   text-align: center;
-  margin: 0;
 
-  @include font(27px, 30px);
-}
-
-.page-header__offer {
-  display: none;
+  @include font-set($weight, 27px, 30px);
 }
 
 .page-header__intro {
-  background-color: $color-gray-light;
+  background-color: #fbfbfb;
   min-height: 177px;
+  z-index: -1;
 
   &--image {
     min-height: 283px;
@@ -29,53 +21,53 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    max-width: $tablet-width;
-    padding: 0;
-  }
-
-  .page-header__offer {
-    display: block;
-    margin: 0;
-    padding-top: 24px;
-    text-align: right;
-  }
-
   .page-header__intro {
-    padding: 0 $indents-tablet;
-    margin-top: -73px;
+    margin-top: -58px;
 
     &--image {
-      min-height: 500px;
-      background-position: bottom;
+      min-height: 718px;
+      background-size: cover;
     }
   }
 
   .page-header__title {
-    padding: 103px 88px 83px;
+    @include font-set($weight, 43px, 50px);
+    padding: 0;
+    padding-top: 155px;
+    width: $tablet-width;
+  }
+
+  .page-header__title--no-image {
+    margin-top: 0;
+    padding-top: 95px;
+    padding-bottom: 134px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    max-width: 1250px;
-  }
-
-  .page-header__intro {
-    min-height: 500px;
-  }
-
-  .page-header__intro--image {
-    padding: 0;
-    background-position: bottom;
-  }
-
   .page-header__title {
-    padding: 171px  180px 0;
+    width: $desktop-width;
+    margin: 0 auto;
+
+    @include font-set($weight, 53px, 57px);
+  }
+
+  .page-header__title--no-image {
+    padding-top: 95px;
+    padding-bottom: 108px;
   }
 
   .page-header__offer {
-    padding-right: $indents-desktop;
-    text-align: right;
+    padding-top: 30px;
+  }
+
+  .page-header__intro {
+    margin-top: -42px;
+
+    &--image {
+      padding: 0;
+      min-height: 718px;
+      background-position: bottom;
+    }
   }
 }

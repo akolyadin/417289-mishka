@@ -1,0 +1,50 @@
+.copyright {
+  padding-top: 10px;
+}
+
+.copyright__link {
+  color: $color-black;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  @include font-set($weight, 19px, 18px);
+
+  &:hover {
+    .copyright__icon {
+      fill: $color-blue-darker;
+    }
+  }
+
+  &:active {
+    color: fade($color-black, 30%);
+
+    .copyright__icon {
+      opacity: 0.3;
+    }
+
+    .copyright__text {
+      opacity: 0.3;
+    }
+  }
+}
+
+.copyright__text {
+  display: inline-block;
+  margin: 0 27px 0 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    padding-right: 60px;
+  }
+}

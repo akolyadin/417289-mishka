@@ -1,15 +1,21 @@
-.form__wrapper {
+/*.form {
   margin: 0 auto;
+  max-width: $mobile-width;
+  padding: 0 $indents;
 }
 
 @media (min-width: $tablet-width) {
-  .form__wrapper {
+  .form {
     max-width: $tablet-width;
+    padding: 0;
+    margin-top: 101px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .form__wrapper {
+  .form {
     max-width: $desktop-width;
+    padding: 0 $indents-desktop;
   }
 }
+*/
