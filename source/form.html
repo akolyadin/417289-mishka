@@ -13,12 +13,17 @@
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--home">
               <a class="main-nav__link main-nav__link--home" href="index.html">
-                <img class="main-nav__logo-image" src="../img/logo-mobile.svg" width="89" height="35" alt="Мишка">
+                <picture>
+                  <source class="main-nav__logo-image" media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                  <source class="main-nav__logo-image" media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img class="main-nav__logo-image" src="/img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+                </picture>
               </a>
               <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
               <svg class="main-nav__btn main-nav__btn--open" xmlns="http://www.w3.org/2000/svg" width="19.958" height="14"><path fill="#231F20" d="M0 0h19.958v2H0zM0 6h19.958v2H0zM0 12h19.958v2H0z"/></svg>
               <svg class="main-nav__btn main-nav__btn--close" xmlns="http://www.w3.org/2000/svg" width="20.514" height="20.512"><path d="M20.513 1.414L19.099 0l-8.843 8.842L1.414 0 0 1.414l8.842 8.842L0 19.098l1.414 1.414 8.842-8.842 8.843 8.842 1.414-1.414-8.842-8.842z"/></svg>
-              <span class="visually-hidden">Открыть меню</span></button>
+              <span class="visually-hidden">Открыть меню</span>
+              </button>
             </li>
             <li class="main-nav__item main-nav__item--catalog main-nav__item--opened">
               <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>

@@ -46,7 +46,7 @@
 
 @media (min-width: $tablet-width) {
   .page-menu {
-    margin-top: -90px;
+    margin-top: -110px;
   }
 
 
@@ -60,18 +60,22 @@
 
   .page-menu__item {
     width: 334px;
-    display: flex;
   }
 
   .page-menu__link {
-    padding: 24px 167px 25px 36px;
+    padding: 24px 10px 25px 36px;
+
+    &:hover {
+      margin-top: 5px;
+      padding-top: 29px;
+    }
 
     @include font(20px, 30px);
   }
 
   .page-menu__icon {
     padding-top: 5px;
-    padding-left: 95px;
+    padding-left: 10px;
 
     &--toy {
       padding-right: 0;
@@ -90,6 +94,6 @@
   }
 
   .page-menu__link {
-    padding: 29px 350px 30px 36px;
+    padding: 29px 10px 30px 1px;
   }
 }

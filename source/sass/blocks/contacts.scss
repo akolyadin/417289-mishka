@@ -1,4 +1,4 @@
-.contacts__wrapper {
+.contact__wrapper {
   padding: 41px 0 40px;
   margin: 0 auto;
   width: $mobile-width;
@@ -11,7 +11,7 @@
   @include font-set($weight, 18px, 30px);
 }
 
-.contacts__inner {
+.contact__inner {
   margin: 0 auto 22px;
   width: 260px;
 }
@@ -54,7 +54,24 @@
   }
 }
 
-.contacts__btn {
+.contact__map {
+  position: relative;
+}
+
+
+.contact__map-img {
+  width: 100%;
+  height: auto;
+}
+
+.contact__map-google  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.contact__btn {
   display: block;
   text-align: center;
   width: 260px;
@@ -62,7 +79,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__wrapper {
+  .contact__wrapper {
     width: $tablet-width;
     padding-top: 61px;
     padding-bottom: 0;
@@ -91,7 +108,7 @@
     background-image: url("../img/icon-flag.svg");
   }
 
-  .contacts__inner {
+  .contact__inner {
     width: 668px;
     margin: 0 auto;
     display: flex;
@@ -99,7 +116,7 @@
     margin-bottom: 41px;
   }
 
-  .contacts__item {
+  .contact__item {
     padding-top: 66px;
   }
 
@@ -115,21 +132,21 @@
     @include font(17px, 30px);
   }
 
-  .contacts__btn {
+  .contact__btn {
     width: 230px;
     margin: 0 auto 57px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .contacts__wrapper {
+  .contact__wrapper {
     width: 1050px;
     position: relative;
     padding-top: 140px;
     margin-bottom: 105px;
   }
 
-  .contacts__inner {
+  .contact__inner {
     flex-direction: column;
     width: 350px;
     padding: 0;
@@ -149,11 +166,21 @@
     top: -9px;
   }
 
-  .contacts__item {
+  .contact__item {
     padding-top: 49px;
   }
 
-  .contacts__btn {
+  .contact__map {
+    position: absolute;
+    top: 69px;
+    right: 50px;
+
+    width: 525px;
+    height: auto;
+  }
+
+
+  .contact__btn {
     margin-left: 175px;
   }
 }

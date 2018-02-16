@@ -64,8 +64,13 @@
     margin-bottom: 56px;
   }
 
-  .catalog-item__image {
+  .catalog-item__link {
     width: 332px;
+  }
+
+  .catalog-item__img {
+    width: 100%;
+    height: 100%;
   }
 
   .catalog-item__description {
@@ -120,7 +125,7 @@
     flex-grow: 1;
   }
 
-  .catalog-item__image {
+  .catalog-item__link {
     width: 332px;
     height: 460px;
   }
