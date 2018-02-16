@@ -123,7 +123,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
-    width: $desktop-width;
+    width: 1050px;
     position: relative;
     padding-top: 140px;
     margin-bottom: 105px;
@@ -134,18 +134,18 @@
     width: 350px;
     padding: 0;
     margin-bottom: 62px;
-    margin-left: 30px;
+    margin-left: 175px;
   }
 
   .contact__title {
-    padding-left: 30px;
+    margin-left: 171px;
 
     @include font(53px, 57px);
   }
 
   .contact__title::after {
     right: auto;
-    left: -75px;
+    left: -106px;
     top: -9px;
   }
 
@@ -154,6 +154,6 @@
   }
 
   .contacts__btn {
-    margin: 30px;
+    margin-left: 175px;
   }
 }

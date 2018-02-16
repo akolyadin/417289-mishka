@@ -124,14 +124,14 @@
 
 @media (min-width: $desktop-width) {
   .reviews__wrapper {
-    padding-top: 69px;
+    padding-top: 75px;
     padding-bottom: 156px;
-    max-width: $desktop-width;
+    width: $desktop-width;
     background-position: 50px top;
   }
 
   .reviews__title {
-    margin-left: 170px;
+    margin-left: 222px;
 
     @include font(53px, 57px);
   }
@@ -139,16 +139,23 @@
   .review__text {
     padding-right: 90px;
     margin-bottom: 37px;
-    margin-left: 173px;
+    margin-left: 225px;
+    width: 875px;
   }
 
   .review__author {
     font-size: 17px;
     margin-bottom: 2px;
-    margin-left: 173px;
+    margin-left: 225px;
   }
 
   .reviews__toggles {
     bottom: 186px;
+  }
+
+  .reviews__btn {
+    top: 84px;
+    right: 50px;
+    width: 171px;
   }
 }

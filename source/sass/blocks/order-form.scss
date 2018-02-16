@@ -251,7 +251,6 @@
   }
 
   .order-form__item {
-    width: 100%;
     padding-top: 55px;
     padding-bottom: 20px;
 
@@ -272,11 +271,11 @@
   .order-form__wrapper {
     display: flex;
     width: 668px;
-    margin-left: 50px;
+    margin: 0 auto;
 
     &--color {
-      margin-right: 0;
       width: 718px;
+      margin-left: 167px;
     }
   }
 
@@ -399,7 +398,7 @@
   .order-form__footer {
     display: flex;
     width: 668px;
-    margin: 0 50px;
+    margin: 0 auto;
   }
 
   .order-form__btn {
@@ -421,15 +420,15 @@
 @media (min-width: $desktop-width) {
   .order-form__text {
     width: 700px;
-    padding-top: 17px;
+    padding-top: 117px;
   }
 
   .order-form__wrapper {
-    width: 1050px;
-    margin-left: 50px;
+    width: 1055px;
 
     &--color {
-      width: 1100px;
+      width: 1050px;
+      margin-left: 200px;
     }
   }
 
@@ -462,8 +461,8 @@
   .order-form__icon-email,
   .order-form__icon-phone {
     position: absolute;
-    right: 40px;
-    top: 9px;
+    right: 7px;
+    top: 10px;
   }
 
   .order-form__input-text--comment {
@@ -473,13 +472,14 @@
 
   .order-form__footer {
     display: flex;
-    margin: 0 225px;
+    margin-left: 375px;
     width: 700px;
   }
 
   .order-form__btn {
     margin-top: 30px;
     margin-bottom: 47px;
+
   }
 
   .order-form__required {

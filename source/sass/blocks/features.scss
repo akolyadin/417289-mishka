@@ -72,12 +72,13 @@
 @media (min-width: $tablet-width) {
   .features__wrapper {
     width: 668px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
+    padding-top: 20px;
   }
 
   .features_title {
     margin-left: -5px;
-    margin-bottom: 43px;
+    margin-bottom: 47px;
 
     @include font(43px, 50px);
   }
@@ -90,7 +91,7 @@
   .feature-item {
     width: 300px;
     margin-right: 34px;
-    margin-bottom: 52px;
+    margin-bottom: 60px;
 
     @include font(20px, 22px);
   }
@@ -122,8 +123,7 @@
 
 @media (min-width: $desktop-width) {
   .features__wrapper {
-    padding: 0 $indents-desktop;
-    margin-left: 175px;
+    width: 700px;
   }
 
   .feature-item {
@@ -131,9 +131,18 @@
   }
 
   .features_title {
-    margin-bottom: 43px;
+    margin-top: 40px;
+    margin-bottom: 49px;
 
     @include font(53px, 57px);
+  }
+
+  .feature-icon--ball {
+    margin-bottom: 20px;
+  }
+
+  .feature-icon--gift {
+    margin-bottom: 18px;
   }
 
   .feature-item--eco {

@@ -22,10 +22,10 @@
 
 @media (min-width: $tablet-width) {
   .page-header__intro {
-    margin-top: -43px;
+    margin-top: -58px;
 
     &--image {
-      min-height: 629px;
+      min-height: 718px;
       background-size: cover;
     }
   }
@@ -33,13 +33,14 @@
   .page-header__title {
     @include font-set($weight, 43px, 50px);
     padding: 0;
-    padding-top: 156px;
+    padding-top: 155px;
     width: $tablet-width;
   }
 
   .page-header__title--no-image {
     margin-top: 0;
     padding-top: 95px;
+    padding-bottom: 134px;
   }
 }
 
@@ -65,7 +66,7 @@
 
     &--image {
       padding: 0;
-      min-height: 626px;
+      min-height: 718px;
       background-position: bottom;
     }
   }
