@@ -38,7 +38,6 @@
   @include font(25px, 30px);
 }
 
-
 .product-week__mark {
   color: $color-blue-lighter;
   text-transform: uppercase;
@@ -168,6 +167,7 @@
     z-index: -1;
     right: 0;
     top: 145px;
+    width: 334px;
   }
 
   .product-week__image img {
@@ -240,6 +240,10 @@
 
   .product-week__table {
     margin-bottom: 94px;
+  }
+
+  .product-week__image {
+    width: 525px;
   }
 
   .product-week__image img {

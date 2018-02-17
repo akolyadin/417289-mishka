@@ -37,11 +37,11 @@
 
   @include font-set($weight, 17px, 24px);
 
-  &::hover {
+  &:hover {
     opacity: 0.6;
   }
 
-  &::active {
+  &:active {
     opacity: 0.3;
   }
 }
@@ -101,11 +101,11 @@
 .main-nav__logo-image {
   display: inline-block;
 
-  &::hover {
+  &:hover {
     opacity: 0.6;
   }
 
-  &::active {
+  &:active {
     opacity: 0.3;
   }
 }
@@ -311,11 +311,11 @@
 
     @include font(15px, 24px);
 
-    &::hover {
+    &:hover {
       opacity: 0.6;
     }
 
-    &::active {
+    &:active {
       opacity: 0.3;
     }
   }
