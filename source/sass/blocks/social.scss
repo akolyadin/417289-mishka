@@ -7,17 +7,6 @@
   flex-wrap: wrap;
 }
 
-.social__icon {
-  &:hover {
-    fill: $color-blue-darker;
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
 .social__item {
   margin-right: 8px;
 }
@@ -31,15 +20,30 @@
   background-repeat: no-repeat;
 }
 
-.social__image {
-  fill: #231f20;
+
+.social__link .icon--insta {
+  width: 22px;
+  heigh: 22px;
+}
+
+.social__link .icon--fb {
+  width: 15px;
+  heigh: 28px;
+}
+
+.social__link .icon--twitter {
+  width: 24px;
+  heigh: 20px;
+}
+
+.social__link .icon {
 
   &:hover {
     fill: $color-blue-darker;
   }
 
   &:active {
-    fill: fade($color-blue-darker, 30%);
+    opacity: 0.6;
   }
 }
 

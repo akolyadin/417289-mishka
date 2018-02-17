@@ -20,14 +20,14 @@
 
   &--image {
     z-index: 10;
-    background-image: url("/img/hero-mobile@1x.jpg");
+    background-image: url("../img/hero-mobile@1x.jpg");
     min-height: 283px;
     background-repeat: no-repeat;
     background-position: 50% -16%;
     background-size: 580px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("/img/hero-mobile@2x.jpg");
+      background-image: url("../img/hero-mobile@2x.jpg");
     }
   }
 }
@@ -43,13 +43,13 @@
 
     &--image {
       height: 740px;
-      background: url("/img/hero-tablet@1x.jpg") 50% 0 no-repeat #fafafa;
+      background: url("../img/hero-tablet@1x.jpg") 50% 0 no-repeat #fafafa;
       background-size: cover;
       flex-wrap: wrap;
       align-items: flex-end;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("/img/hero-tablet@2x.jpg");
+        background-image: url("../img/hero-tablet@2x.jpg");
       }
     }
   }
@@ -62,7 +62,7 @@
     width: 100%;
     height: 19px;
     content: "";
-    background: url("/img/bg-zigzag-fill.svg") repeat-x 0 0;
+    background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
     background-size: 100%;
   }
 

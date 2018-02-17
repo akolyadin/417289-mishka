@@ -51,7 +51,7 @@
   content: "";
   cursor: pointer;
 
-  background-image: url("/img/icon-play.svg");
+  background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
 }
 
@@ -59,7 +59,7 @@
   display: none;
 }
 
-.prod-process__preview-img {
+.prod-process__preview img {
   width: 100%;
   height: auto;
 }
