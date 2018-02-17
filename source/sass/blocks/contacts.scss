@@ -1,5 +1,5 @@
 .contact__wrapper {
-  padding: 41px 0 40px;
+  padding: 36px 0 40px;
   margin: 0 auto;
   width: $mobile-width;
 }
@@ -35,6 +35,7 @@
 
 .contact__text {
   padding-left: 13px;
+  padding-right: 20px;
   width: 183px;
 }
 
@@ -56,6 +57,7 @@
 
 .contact__map {
   position: relative;
+  margin-bottom: 32px;
 }
 
 
@@ -81,7 +83,7 @@
 @media (min-width: $tablet-width) {
   .contact__wrapper {
     width: $tablet-width;
-    padding-top: 61px;
+    padding-top: 75px;
     padding-bottom: 0;
   }
 
@@ -89,10 +91,8 @@
   .contact__title {
     padding: 0;
     margin: 0 auto;
-    margin-bottom: 34px;
     position: relative;
-    width: 668px;
-
+    width: 679px;
 
     @include font(43px, 50px);
   }
@@ -103,7 +103,7 @@
     width: 47px;
     height: 81px;
     position: absolute;
-    right: 52px;
+    right: 9px;
     top: -15px;
     background-image: url("../img/icon-flag.svg");
   }
@@ -117,7 +117,7 @@
   }
 
   .contact__item {
-    padding-top: 66px;
+    padding-top: 32px;
   }
 
   .contact__label {
@@ -127,14 +127,18 @@
   }
 
   .contact__text {
-    width: 255px;
+    width: 267px;
 
     @include font(17px, 30px);
   }
 
+  .contact__map {
+    margin-bottom: 47px;
+  }
+
   .contact__btn {
     width: 230px;
-    margin: 0 auto 57px;
+    margin: 20px auto 57px;
   }
 }
 

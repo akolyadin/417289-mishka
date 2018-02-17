@@ -17,8 +17,8 @@
   margin: 0 auto;
   text-decoration: none;
   color: $color-white;
-  padding-top: 15px;
-  padding-bottom: 21px;
+  padding-top: 17px;
+  padding-bottom: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +46,7 @@
 
 @media (min-width: $tablet-width) {
   .page-menu {
-    margin-top: -110px;
+    margin-top: -115px;
   }
 
 
@@ -63,7 +63,7 @@
   }
 
   .page-menu__link {
-    padding: 24px 10px 25px 36px;
+    padding: 28px 0 35px 0;
 
     &:hover {
       margin-top: 5px;
@@ -73,14 +73,6 @@
     @include font(20px, 30px);
   }
 
-  .page-menu__icon {
-    padding-top: 5px;
-    padding-left: 10px;
-
-    &--toy {
-      padding-right: 0;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {

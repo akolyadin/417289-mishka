@@ -66,6 +66,7 @@
 
   .catalog-item__link {
     width: 332px;
+    height: 330px
   }
 
   .catalog-item__img {
@@ -80,10 +81,13 @@
   }
 
   .catalog-item__header {
-    margin: 0 29px;
+    margin-left: 29px;
+    flex-grow: 1;
   }
 
   .catalog-item__title {
+    padding-right: 70px;
+
     @include font(20px, 24px);
   }
 
@@ -109,7 +113,7 @@
 @media (min-width: $desktop-width) {
   .catalog-item {
     justify-content: space-between;
-    width: 312px;
+    width: 318px;
     margin: 0;
     padding: 0;
   }
@@ -123,6 +127,10 @@
 
   .catalog-item__header {
     flex-grow: 1;
+  }
+
+  .catalog-item__title {
+    padding-right: 50px;
   }
 
   .catalog-item__link {

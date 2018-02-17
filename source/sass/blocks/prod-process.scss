@@ -82,8 +82,8 @@
 }
 
 .prod-process__footer {
-  padding: 0 33px;
-  margin-top: 23px;
+  padding: 0 30px;
+  margin-top: 18px;
   margin-bottom: 35px;
 }
 
@@ -107,13 +107,37 @@
     padding: 46px 42px 0;
   }
 
+  .prod-process__header {
+    margin-left: 15px;
+  }
+
+  .prod-process__title {
+    margin-bottom: 0;
+
+    @include font(20px, 24px);
+  }
+
+
+  .prod-process__icon-camera {
+    top: 20px;
+    left: 26px;
+  }
+
   .prod-process__description {
-    padding-bottom: 44px;
+    margin-bottom: 35px;
+
+    @include font(15px, 30px);
   }
 
   .prod-process__video::before {
     top: 189px;
     left: 284px;
+  }
+
+  .prod-process__footer {
+    padding: 0 38px;
+    padding-top: 16px;
+    margin-bottom: 0px;
   }
 
   .prod-process__btn {
@@ -126,6 +150,7 @@
     width: 1050px;
     align-items: flex-end;
     position: relative;
+    margin-bottom: 105px;
   }
 
   .prod-process__video {
@@ -156,6 +181,7 @@
     @include font(20px, 24px);
   }
 
+
   .prod-process__footer {
     width: 350px;
     padding: 0;
@@ -168,7 +194,7 @@
   }
 
   .prod-process__btn {
-    margin: 45px 63px 25px;
+    margin: 48px 60px 60px;
   }
 
   .prod-process__icon-camera {

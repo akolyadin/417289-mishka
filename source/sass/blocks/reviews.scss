@@ -17,13 +17,13 @@
 
     background-image: url("/img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-position: 7px 0;
-    background-size: auto 40%
+    background-position: 10px 0;
+    background-size: auto 30%
   }
 }
 
 .reviews__wrapper {
-  padding: 24px 0 45px;
+  padding: 24px 0 6px;
   width: 260px;
   margin: 0 auto;
 }
@@ -95,6 +95,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    padding: 0;
+  }
+
   .reviews:after {
     background-repeat: repeat-x;
     background-position: 0 0;
@@ -102,7 +106,7 @@
   }
 
   .reviews__wrapper {
-    padding: 72px 0 102px;
+    padding: 73px 0 90px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px auto;
@@ -114,7 +118,7 @@
   .reviews__title {
     order: 0;
     width: 668px;
-    margin-left: 50px;
+    margin-left: 45px;
     margin-bottom: 49px;
 
     @include font(43px, 50px);
@@ -130,9 +134,9 @@
 
   .reviews__btn {
     position: absolute;
-    top: 72px;
-    right: 50px;
-    width: 171px;
+    top: 75px;
+    right: 52px;
+    width: 175px;
   }
 
   .review__author {

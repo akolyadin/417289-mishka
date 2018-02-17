@@ -6,7 +6,7 @@
 
 .features_title {
   padding: 0;
-  margin-top: 28px;
+  margin-top: 13px;
   margin-bottom: 32px;
 
   @include font-set($weight, 25px, 30px);
@@ -43,7 +43,7 @@
 }
 
 .feature-icon--flower {
-  padding-left: 10px;
+  margin-left: 7px;
 }
 
 .feature-icon--money {
@@ -51,12 +51,12 @@
 }
 
 .feature-icon--heart {
-  padding-left: 8px;
+  margin-left: 8px;
   margin-bottom: 21px;
 }
 
 .feature-icon--ball {
-  padding-left: 5px;
+  margin-left: 3px;
   margin-bottom: 16px;
 }
 
@@ -66,7 +66,7 @@
 }
 
 .feature-icon--gift {
-  padding-left: 5px;
+  margin-left: 2px;
   margin-bottom: 20px;
 }
 
@@ -74,7 +74,7 @@
   .features__wrapper {
     width: 668px;
     margin-bottom: 25px;
-    padding-top: 20px;
+    padding-top: 30px;
   }
 
   .features_title {
@@ -110,6 +110,7 @@
   }
 
   .feature-item--ball {
+    padding-top: 5px;
     order: 1;
   }
 
