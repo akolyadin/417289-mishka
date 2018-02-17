@@ -1,24 +1,20 @@
 .product-week {
   position: relative;
-
   padding: 0 30px;
   padding-bottom: 45px;
 
-  &:after {
+  &::after {
     position: absolute;
     z-index: 20;
     bottom: 0;
     left: 0;
-
     width: 100%;
     height: 20px;
-
     content: "";
-
     background-image: url("/img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-position: 10px 0;
-    background-size: auto 30%
+    background-size: auto 30%;
   }
 }
 
@@ -46,10 +42,8 @@
 .product-week__mark {
   color: $color-blue-lighter;
   text-transform: uppercase;
-  /*Не пониманю почему не работает это свойство*/
   width: 260px;
   margin: 0 auto;
-  /*-------------*/
 
   @include font(17px, 20px);
 }
@@ -82,6 +76,7 @@
 
 .product-week__image {
   height: 315px;
+  width: 260px;
   margin: 0 auto;
   background-color: $color-gray-light;
 }
@@ -105,7 +100,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .product-week:after {
+  .product-week::after {
     background-repeat: repeat-x;
     background-position: 0 0;
     background-size: 100%;

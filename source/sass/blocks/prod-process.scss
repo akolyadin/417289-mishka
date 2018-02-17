@@ -24,7 +24,7 @@
   @include font-set($weight, 17px, 24px);
 }
 
-.prod-process__video  {
+.prod-process__video {
   position: relative;
 
   width: 100%;
@@ -40,7 +40,7 @@
   }
 }
 
-.prod-process__video::before  {
+.prod-process__video::before {
   position: absolute;
   top: 37px;
   left: 80px;
@@ -67,10 +67,6 @@
 .prod-process__btn {
   text-align: center;
   display: block;
-}
-
-.prod-process__play-btn {
-  position: absolute;
 }
 
 .prod-process__description {
@@ -100,15 +96,14 @@
 
   .prod-process__header {
     order: 1;
+    margin-left: 15px;
   }
 
   .prod-process__footer {
     order: 2;
-    padding: 46px 42px 0;
-  }
-
-  .prod-process__header {
-    margin-left: 15px;
+    padding: 46px 38px 0;
+    padding-top: 16px;
+    margin-bottom: 0;
   }
 
   .prod-process__title {
@@ -132,12 +127,6 @@
   .prod-process__video::before {
     top: 189px;
     left: 284px;
-  }
-
-  .prod-process__footer {
-    padding: 0 38px;
-    padding-top: 16px;
-    margin-bottom: 0px;
   }
 
   .prod-process__btn {
