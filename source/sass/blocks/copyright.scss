@@ -13,9 +13,14 @@
 
   @include font-set($weight, 19px, 18px);
 
+  &:hover {
+    .icon--logoacademy {
+      fill: $color-blue-darker;
+    }
+  }
 
   &:active {
-    opacity: 0.3;
+    opacity: 0.6;
   }
 }
 
@@ -24,16 +29,6 @@
   height: 34px;
   right: 0;
   fill: $color-blue-lighter;
-
-  &:hover {
-    fill:$color-blue-darker
-  }
-
-
-  &:active {
-    opacity: 0.6;
-  }
-
 }
 
 .copyright__link svg {

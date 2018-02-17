@@ -36,36 +36,45 @@
   }
 }
 
-.feature-icon {
-  display: block;
+.icon--flower {
   fill: $color-blue-lighter;
   margin-bottom: 17px;
-}
-
-.feature-icon--flower {
+  display: block;
   margin-left: 7px;
+  width: 33px;
+  height: 37px;
 }
 
-.feature-icon--money {
-  margin-bottom: 25px;
+.icon--money {
+  fill: $color-blue-lighter;
+  display: block;
+  margin-bottom: 15px;
 }
 
-.feature-icon--heart {
+.icon--heart {
+  fill: $color-blue-lighter;
+  display: block;
   margin-left: 8px;
   margin-bottom: 21px;
 }
 
-.feature-icon--ball {
+.icon--ball {
+  fill: $color-blue-lighter;
+  display: block;
   margin-left: 3px;
   margin-bottom: 16px;
 }
 
-.feature-icon--rocket {
+.icon--rocket {
+  fill: $color-blue-lighter;
+  display: block;
   margin-left: -5px;
   margin-bottom: 27px;
 }
 
-.feature-icon--gift {
+.icon--gift {
+  fill: $color-blue-lighter;
+  display: block;
   margin-left: 2px;
   margin-bottom: 20px;
 }

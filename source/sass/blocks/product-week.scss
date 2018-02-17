@@ -40,7 +40,8 @@
   color: $color-blue-lighter;
   text-transform: uppercase;
   width: 260px;
-  margin: 0 auto;
+  margin: 5px auto;
+  display: block;
 
   @include font(17px, 20px);
 }

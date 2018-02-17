@@ -144,7 +144,7 @@
   background-image: url("../img/icon-tick.svg");
   background-size: 33px 22px;
   background-repeat: no-repeat;
-  background-position: 3px 7px;
+  background-position: 1px 7px;
 }
 
 .order-form__label--radio,
@@ -299,7 +299,7 @@
     padding-top: 17px;
     padding-bottom: 17px;
     padding-left: 82px;
-    width: 200px;
+    width: 205px;
   }
 
   .order-form__group--radio {
@@ -316,7 +316,7 @@
     background-image: url("../img/icon-tick.svg");
     background-size: 37px 37px;
     background-repeat: no-repeat;
-    background-position: 10px 5px;
+    background-position: 5px 5px;
   }
 
   .order-form__input-radio[type="radio"]:checked + .order-form__label::before {
