@@ -1,5 +1,5 @@
 .copyright {
-  padding-top: 10px;
+  padding-top: 7px;
 }
 
 .copyright__link {
@@ -9,42 +9,53 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  position: relative;
 
   @include font-set($weight, 19px, 18px);
 
-  &:hover {
-    .copyright__icon {
-      fill: $color-blue-darker;
-    }
+  &:hover .icon--logoacademy {
+    fill: $color-blue-darker;
   }
 
   &:active {
-    color: fade($color-black, 30%);
-
-    .copyright__icon {
-      opacity: 0.3;
-    }
-
-    .copyright__text {
-      opacity: 0.3;
-    }
+    opacity: 0.6;
   }
+}
+
+.copyright__link .icon--logoacademy {
+  width: 26px;
+  height: 34px;
+  right: 0;
+  fill: $color-blue-lighter;
+}
+
+.copyright__link svg {
+  width: 26px;
+  height: 34px;
+  right: 0;
 }
 
 .copyright__text {
   display: inline-block;
-  margin: 0 27px 0 0;
+  margin: 0 49px 0 0;
   padding: 0;
+  padding-top: 5px;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     padding-top: 0;
+    margin-bottom: 10px;
+    margin-right: 2px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .copyright {
-    padding-right: 60px;
+    padding-right: 55px;
+  }
+
+  .copyright__link .icon--logoacademy {
+    top: 0;
   }
 }

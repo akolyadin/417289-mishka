@@ -32,6 +32,23 @@
     padding-top: 15px;
   }
 
+  .page-footer__social {
+    margin-right: 20px;
+  }
+
+  .icon__logo-footer {
+    width: 102px;
+    height: 34px;
+
+    &:hover {
+      fill: $color-blue-darker;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   .copyright {
     margin-left: auto;
     padding-right: $indents-tablet;

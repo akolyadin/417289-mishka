@@ -1,6 +1,6 @@
 @import "base/variables";
 @import "base/mixin";
-@import "../../node_modules/node-normalize-scss/_normalize";
+@import "../../node_modules/normalize-scss-7.0.0/normalize-scss-7.0.0/sass/_normalize.scss";
 @import "base/fonts";
 @import "base/base";
 @import "blocks/btn";
@@ -12,11 +12,9 @@
 @import "blocks/reviews";
 @import "blocks/page-footer.scss";
 @import "blocks/contacts";
-@import "blocks/map";
 @import "blocks/social";
 @import "blocks/copyright";
 @import "blocks/modal";
-@import "blocks/page-main";
 @import "blocks/catalog-list";
 @import "blocks/catalog-item";
 @import "blocks/prod-process";

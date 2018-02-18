@@ -3,6 +3,16 @@
   margin-bottom: 60px;
   border: 1px solid $color-gray-light;
   width: 260px;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 $color-gray-normal;
+    transition: all 0.2s;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 $color-gray-normal;
+    transition: all 0.2s;
+  }
 }
 
 .prod-process__header {
@@ -25,16 +35,45 @@
 }
 
 .prod-process__video {
-  height: 154px;
+  position: relative;
+
+  width: 100%;
+  height: auto;
+
+  &:hover::before {
+    transform: scale(1.2);
+  }
+
+  &:active::before {
+    transform: scale(0.8);
+    opacity: 0.9;
+  }
+}
+
+.prod-process__video::before {
+  position: absolute;
+  top: 37px;
+  left: 80px;
+  width: 101px;
+  height: 77px;
+  content: "";
+  cursor: pointer;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+}
+
+.prod-process__play-btn {
+  display: none;
+}
+
+.prod-process__preview img {
+  width: 100%;
+  height: auto;
 }
 
 .prod-process__btn {
   text-align: center;
   display: block;
-}
-
-.prod-process__play-btn {
-  position: absolute;
 }
 
 .prod-process__description {
@@ -46,8 +85,8 @@
 }
 
 .prod-process__footer {
-  padding: 0 33px;
-  margin-top: 23px;
+  padding: 0 30px;
+  margin-top: 18px;
   margin-bottom: 35px;
 }
 
@@ -64,15 +103,37 @@
 
   .prod-process__header {
     order: 1;
+    margin-left: 15px;
   }
 
   .prod-process__footer {
     order: 2;
-    padding: 46px 42px 0;
+    padding: 46px 38px 0;
+    padding-top: 16px;
+    margin-bottom: 0;
+  }
+
+  .prod-process__title {
+    margin-bottom: 0;
+
+    @include font(20px, 24px);
+  }
+
+
+  .prod-process__icon-camera {
+    top: 20px;
+    left: 26px;
   }
 
   .prod-process__description {
-    padding-bottom: 44px;
+    margin-bottom: 35px;
+
+    @include font(15px, 30px);
+  }
+
+  .prod-process__video::before {
+    top: 189px;
+    left: 284px;
   }
 
   .prod-process__btn {
@@ -85,14 +146,19 @@
     width: 1050px;
     align-items: flex-end;
     position: relative;
+    margin-bottom: 105px;
   }
 
   .prod-process__video {
-    width: 500px;
-    height: 400px;
+    width: 683px;
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  .prod-process__video::before {
+    top: 190px;
+    left: 290px;
   }
 
   .prod-process__header {
@@ -111,6 +177,7 @@
     @include font(20px, 24px);
   }
 
+
   .prod-process__footer {
     width: 350px;
     padding: 0;
@@ -123,7 +190,7 @@
   }
 
   .prod-process__btn {
-    margin: 45px 63px 30px;
+    margin: 48px 60px 60px;
   }
 
   .prod-process__icon-camera {
