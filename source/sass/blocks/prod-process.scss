@@ -5,12 +5,12 @@
   width: 260px;
 
   &:hover {
-    box-shadow: 0px 6px 10px 0px $color-gray-normal;
+    box-shadow: 0 6px 10px 0 $color-gray-normal;
     transition: all 0.2s;
   }
 
   &:active {
-    box-shadow: 0px 3px 5px 0px $color-gray-normal;
+    box-shadow: 0 3px 5px 0 $color-gray-normal;
     transition: all 0.2s;
   }
 }

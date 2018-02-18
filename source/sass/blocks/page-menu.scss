@@ -42,17 +42,14 @@
 
   &--toy {
     padding-right: 0;
+    width: 60px;
+    height: 60px;
   }
 }
 
 .page-menu__icon--interior {
   width: 48px;
   height: 62px;
-}
-
-.page-menu__icon--toy {
-  width: 60px;
-  height: 60px;
 }
 
 @media (min-width: $tablet-width) {
