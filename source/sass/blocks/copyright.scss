@@ -1,5 +1,5 @@
 .copyright {
-  padding-top: 10px;
+  padding-top: 7px;
 }
 
 .copyright__link {
@@ -13,10 +13,8 @@
 
   @include font-set($weight, 19px, 18px);
 
-  &:hover {
-    .icon--logoacademy {
-      fill: $color-blue-darker;
-    }
+  &:hover .icon--logoacademy {
+    fill: $color-blue-darker;
   }
 
   &:active {
@@ -39,18 +37,21 @@
 
 .copyright__text {
   display: inline-block;
-  margin: 0 27px 0 0;
+  margin: 0 49px 0 0;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     padding-top: 0;
+    margin-bottom: 10px;
+    margin-right: 2px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .copyright {
-    padding-right: 60px;
+    padding-top: 10px;
+    padding-right: 50px;
   }
 }

@@ -39,11 +39,10 @@
 
   &:hover {
     opacity: 0.6;
+  }
 
-    .icon {
-      opacity: 1;
-      fill: $color-blue-darker;
-    }
+  &:hover .icon {
+    fill: $color-blue-darker;
   }
 
   &:active {
@@ -82,6 +81,7 @@
 
 .main-nav__link--home {
   padding: 0;
+  padding-left: 8px;
   text-align: center;
   z-index: 1;
   display: inline-block;
@@ -96,8 +96,8 @@
 }
 
 .main-nav__toggle {
-  right: 20px;
-  top: 28px;
+  right: 15px;
+  top: 29px;
   z-index: 20;
   position: absolute;
   background-color: transparent;
@@ -166,9 +166,9 @@
   }
 
   .main-nav__link--home {
-    padding-top: 16px;
+    padding-top: 22px;
     margin-right: 195px;
-    margin-left: -2px;
+    margin-left: -13px;
   }
 
   .main-nav__link--home img {
@@ -191,8 +191,8 @@
 
   .icon--search,
   .icon--basket {
-    top: 30px;
-    left: 35px;
+    top: 35px;
+    left: 30px;
   }
 
   .main-nav__item--catalog {
@@ -246,8 +246,9 @@
   }
 
   .main-nav__link {
-    margin-top: 25px;
+    margin-top: 30px;
     padding-top: 0;
+    margin-bottom: 8px;
   }
 
   .main-nav__list {
@@ -261,9 +262,10 @@
   }
 
 .main-nav__link--home img {
-    width: 200px;
+    width: 250px;
+    padding-top: 10px;
     height: auto;
-    margin-left: 40px;
+    margin-left: 56px;
   }
 
   .main-nav__item--catalog {

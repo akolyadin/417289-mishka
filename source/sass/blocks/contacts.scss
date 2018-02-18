@@ -60,6 +60,17 @@
   margin-bottom: 32px;
 }
 
+.contact__map::after {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 100px;
+  top: 31%;
+  left: 43%;
+  position: absolute;
+  background-image: url("../img/icon-map-pin.svg");
+}
+
 
 .contact__map img {
   width: 100%;
@@ -136,6 +147,11 @@
     margin-bottom: 47px;
   }
 
+  .contact__map::after {
+    top: 30%;
+    left: 47%;
+  }
+
   .contact__btn {
     width: 230px;
     margin: 20px auto 57px;
@@ -160,6 +176,7 @@
 
   .contact__title {
     margin-left: 171px;
+    margin-bottom: 32px;
 
     @include font(53px, 57px);
   }
@@ -170,17 +187,21 @@
     top: -9px;
   }
 
-  .contact__item {
-    padding-top: 49px;
-  }
-
   .contact__map {
     position: absolute;
     top: 69px;
-    right: 50px;
-
+    right: 0;
     width: 525px;
     height: auto;
+  }
+
+  .contact__map::after {
+    top: 30%;
+    left: 46%;
+  }
+
+   .contact__item {
+    padding-top: 0;
   }
 
 

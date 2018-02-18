@@ -6,7 +6,7 @@
 
 .features_title {
   padding: 0;
-  margin-top: 13px;
+  margin-top: 29px;
   margin-bottom: 32px;
 
   @include font-set($weight, 25px, 30px);
@@ -48,14 +48,14 @@
 .icon--money {
   fill: $color-blue-lighter;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 26px;
 }
 
 .icon--heart {
   fill: $color-blue-lighter;
   display: block;
   margin-left: 8px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .icon--ball {
@@ -142,18 +142,14 @@
   }
 
   .features_title {
-    margin-top: 40px;
+    margin-top: 45px;
     margin-bottom: 49px;
 
     @include font(53px, 57px);
   }
 
-  .feature-icon--ball {
-    margin-bottom: 20px;
-  }
-
-  .feature-icon--gift {
-    margin-bottom: 18px;
+  .icon--gift {
+    margin-bottom: 15px;
   }
 
   .feature-item--eco {

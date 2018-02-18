@@ -44,6 +44,16 @@
   }
 }
 
+.page-menu__icon--interior {
+  width: 48px;
+  height: 62px;
+}
+
+.page-menu__icon--toy {
+  width: 60px;
+  height: 60px;
+}
+
 @media (min-width: $tablet-width) {
   .page-menu {
     margin-top: -115px;
@@ -60,15 +70,20 @@
 
   .page-menu__item {
     width: 334px;
+
+    &:hover {
+      margin-top: -5px;
+    }
+
+    &:active .page-menu__link {
+      opacity: 0.3;
+    }
   }
 
   .page-menu__link {
+    width: 265px;
     padding: 28px 0 35px 0;
-
-    &:hover {
-      margin-top: 5px;
-      padding-top: 29px;
-    }
+    margin: 0 20px 0 35px;
 
     @include font(20px, 30px);
   }
@@ -85,6 +100,7 @@
   }
 
   .page-menu__link {
+    width: 468px;
     padding: 29px 10px 30px 1px;
   }
 }
