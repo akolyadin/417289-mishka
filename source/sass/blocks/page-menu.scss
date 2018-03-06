@@ -54,7 +54,7 @@
 
 @media (min-width: $tablet-width) {
   .page-menu {
-    margin-top: -115px;
+    background-color: #f9f9f9;
   }
 
 
@@ -70,7 +70,13 @@
     width: 334px;
 
     &:hover {
-      margin-top: -5px;
+      transform: translateY(-5px);
+      box-shadow: 0 5px $color-blue-lighter;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px $color-blue-darker;
     }
 
     &:active .page-menu__link {

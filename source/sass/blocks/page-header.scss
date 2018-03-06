@@ -19,13 +19,13 @@
 }
 
 .page-header__intro {
-  background-color: #fbfbfb;
-
+  background-color: #f9f9f9;
 
   &--image {
     z-index: 10;
     background-image: url("../img/hero-mobile@1x.jpg");
     min-height: 283px;
+    background-size: 575px 373px;
     background-repeat: no-repeat;
     background-position: 50% 21%;
     background-size: 580px auto;
@@ -46,9 +46,9 @@
     margin-top: -59px;
 
     &--image {
-      height: 743px;
-      background: url("../img/hero-tablet@1x.jpg") 50% 0 no-repeat #fafafa;
-      background-size: cover;
+      min-height: 630px;
+      background: url("../img/hero-tablet@1x.jpg") 50% 0 no-repeat #f9f9f9;
+      background-size: 1150px 630px;
       flex-wrap: wrap;
       align-items: flex-end;
 
@@ -109,9 +109,9 @@
     margin-top: -42px;
 
     &--image {
-      height: 743px;
-      background: url("../img/hero-desktop@1x.jpg") 50% 0 no-repeat #fafafa;
-      background-size: cover;
+      min-height: 630px;
+      background: url("../img/hero-desktop@1x.jpg") 50% 0 no-repeat #f9f9f9;
+      background-size: 1150px 630px;
       flex-wrap: wrap;
       align-items: flex-end;
 

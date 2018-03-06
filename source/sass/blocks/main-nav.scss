@@ -98,12 +98,11 @@
 .main-nav__toggle {
   right: 15px;
   top: 29px;
-  z-index: 20;
+  height: 21px;
+  width: 21px;
+  z-index: 20000;
   position: absolute;
   background-color: transparent;
-  background-size: 21px 20px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
   border: none;
 }
 
@@ -114,6 +113,8 @@
 }
 
 .icon--open {
+  top: 1px;
+  right: 0;
   width: 20px;
   height: 14px;
 }
